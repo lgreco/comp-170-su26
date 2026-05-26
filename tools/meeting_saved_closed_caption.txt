@@ -1,0 +1,2346 @@
+[Leo Irakliotis] 10:25:40
+All right, I'd like to start if there are no questions or
+
+[Leo Irakliotis] 10:25:45
+comments or requests. Let me find my tablet stylus that I just
+
+[Leo Irakliotis] 10:25:50
+drop to the floor, there it is. If there are no questions, no comments, or no requests, I would like to start with
+
+[Leo Irakliotis] 10:26:00
+Discussion that we had last week about transitioning from the introductory programming course like COMP 170 or whatever is the introductory programming course you may have taken to
+
+[Leo Irakliotis] 10:26:13
+to this course. And the thing that I mentioned, and I'll keep mentioning is that if you're coming to an intermediate programming course like like this one, for example, and you have a good understanding of arrays, strings, if statements, and loops
+
+[Leo Irakliotis] 10:26:27
+You're in pretty good shape. And the way to test that understanding is to look at problems that we had for homework in the introductory programming course
+
+[Leo Irakliotis] 10:26:41
+And my favorite one
+
+[Leo Irakliotis] 10:26:43
+In fact, that I used last week was the Mississippi problem. Here, I'm simplifying it by printing my name because Mississippi is 11 characters long and I don't have the space on the screen, nor the talent to draw all those letters
+
+[Leo Irakliotis] 10:26:58
+But here, I have drawn three blocks
+
+[Leo Irakliotis] 10:27:04
+with the letters for my first name. And in COMP 17, in the introductory programming course, we were really good at taking
+
+[Leo Irakliotis] 10:27:20
+These
+
+[Leo Irakliotis] 10:27:25
+these block letters
+
+[Leo Irakliotis] 10:27:34
+And
+
+[Leo Irakliotis] 10:27:36
+printing them
+
+[Leo Irakliotis] 10:27:38
+vertically, that was a very easy problem. We wrote a bunch of print statements, and we were able to stack
+
+[Leo Irakliotis] 10:27:48
+these letters vertically. That was a very straightforward problem because every letter was printed with a method that had a bunch of print statements. So, for example.
+
+[Leo Irakliotis] 10:28:04
+For
+
+[Leo Irakliotis] 10:28:08
+For this letter here
+
+[Leo Irakliotis] 10:28:11
+We had print
+
+[Leo Irakliotis] 10:28:17
+star, I mean, wherever you see blue here, that means a star star space space space
+
+[Leo Irakliotis] 10:28:25
+space. And then we had this command about 1, 2, 3, 4, 5, 6, 7 times
+
+[Leo Irakliotis] 10:28:56
+And for the last command… for the last spring statement here, we just
+
+[Leo Irakliotis] 10:29:04
+printed
+
+[Leo Irakliotis] 10:29:06
+The star character, not just space. So for example here
+
+[Leo Irakliotis] 10:29:11
+We came
+
+[Leo Irakliotis] 10:29:13
+enhance star star star
+
+[Leo Irakliotis] 10:29:21
+And we call this method here
+
+[Leo Irakliotis] 10:29:32
+define
+
+[Leo Irakliotis] 10:29:37
+Print the letter L
+
+[Leo Irakliotis] 10:29:40
+And that was just a bunch of print statements. Very naive coding, but very effective. And by the way, in
+
+[Leo Irakliotis] 10:29:48
+In computer science, in computing in general, when we want to show the space character
+
+[Leo Irakliotis] 10:29:54
+We use this little underscore with a sharp
+
+[Leo Irakliotis] 10:29:58
+angle, so it's not… it's like in a very short letter U with very short, very square, very short letter U that indicates space, the space bar, and guess what that symbol is called the space bar symbol
+
+[Leo Irakliotis] 10:30:14
+Because that way, when you see it like that, you can tell… you can tell exactly how many times I press the spacebar, 1, 2, 3, 4. If I just type 4 spaces there, some… it's not easy to see that empty space there and ask yourself, is
+
+[Leo Irakliotis] 10:30:29
+four or five or six times the spacebar
+
+[Leo Irakliotis] 10:30:32
+So we did that. We wrote methods for LEO or MISP for Mississippi, and we printed the name of the river of the second longest river in the U.S. vertically. By the way
+
+[Leo Irakliotis] 10:30:49
+Alexander, if Mississippi is the second longest river in the US, what is the longest river in the U.S.
+
+[Alexander Garcia] 10:30:59
+I'm going to be honest, I really don't know
+
+[Leo Irakliotis] 10:31:02
+Domiga
+
+[Temeeka Glass] 10:31:04
+Missouri?
+
+[Alexander Garcia] 10:31:07
+Miss,
+
+[Leo Irakliotis] 10:31:07
+Missouri
+
+[Leo Irakliotis] 10:31:09
+By 40 miles, you hear all these stories about the Mississippi
+
+[Leo Irakliotis] 10:31:14
+And you think that's the great river is the river that cuts the US in half, right? And you think this is the greatest river. And no, for 40 freaking miles, it's the second longest river because Missouri is
+
+[Leo Irakliotis] 10:31:28
+is longer
+
+[Leo Irakliotis] 10:31:30
+But who wrote stories about Missouri? No one. Everybody writes stories about the Mississippi, right? Mark Twain and
+
+[Leo Irakliotis] 10:31:39
+Every just-about famous author of the late 19th, early 20th century, they're fascinating by that big river.
+
+[Leo Irakliotis] 10:31:49
+The question we had in
+
+[Leo Irakliotis] 10:31:54
+Last week is how can I now print Leo
+
+[Leo Irakliotis] 10:31:58
+horizontally
+
+[Leo Irakliotis] 10:32:01
+Like this.
+
+[Leo Irakliotis] 10:32:04
+And one naive answer
+
+[Leo Irakliotis] 10:32:07
+Is to write really long print statements here. So for this entire line
+
+[Leo Irakliotis] 10:32:15
+For this entire first line of horizontal block Leo
+
+[Leo Irakliotis] 10:32:24
+To write a print statement
+
+[Leo Irakliotis] 10:32:31
+Star
+
+[Leo Irakliotis] 10:32:33
+1, 2, 3, 4 spaces, then star, star, star, star
+
+[Leo Irakliotis] 10:32:43
+One space, then space space
+
+[Leo Irakliotis] 10:32:49
+Star, space, space
+
+[Leo Irakliotis] 10:32:56
+And then
+
+[Leo Irakliotis] 10:32:59
+Go line by line and maybe call this method define
+
+[Leo Irakliotis] 10:33:05
+Leo
+
+[Leo Irakliotis] 10:33:07
+All right, so the problem with this method is, first of all, that you have to write
+
+[Leo Irakliotis] 10:33:13
+Print statements that are as long as the name you want to print. And the moment
+
+[Leo Irakliotis] 10:33:21
+Someone says, okay, you print Leo, great. Now print Alexander.
+
+[Leo Irakliotis] 10:33:27
+You have to rewrite the spring statements
+
+[Leo Irakliotis] 10:33:31
+And that's a waste of time.
+
+[Leo Irakliotis] 10:33:34
+Instead, a better solution
+
+[Leo Irakliotis] 10:33:38
+may be
+
+[Leo Irakliotis] 10:33:40
+To say, you know what
+
+[Leo Irakliotis] 10:33:43
+I am going to take these blocks here
+
+[Leo Irakliotis] 10:34:01
+Let's put it in a clean space. There they are
+
+[Leo Irakliotis] 10:34:04
+And I am going to enshrine them
+
+[Leo Irakliotis] 10:34:08
+As arrays
+
+[Leo Irakliotis] 10:34:10
+is lists
+
+[Leo Irakliotis] 10:34:13
+This
+
+[Leo Irakliotis] 10:34:16
+List L.
+
+[Leo Irakliotis] 10:34:20
+This is list E
+
+[Leo Irakliotis] 10:34:23
+And of course, if I
+
+[Leo Irakliotis] 10:34:26
+have finished reading Python for dummies, I should have remembered that lists are square brackets, not parentheses.
+
+[Leo Irakliotis] 10:34:35
+But I started reading Python for dummies last night and I fell asleep.
+
+[Leo Irakliotis] 10:34:43
+And this is the list for letter O. And these were the lists that were given to you
+
+[Leo Irakliotis] 10:34:50
+Last week, as part of the Mississippi problem. Okay, and what are these? These are basically lists of strings. So, for example, the letter L was
+
+[Leo Irakliotis] 10:35:03
+string star
+
+[Leo Irakliotis] 10:35:05
+Space space space space followed by
+
+[Leo Irakliotis] 10:35:12
+Star space space space space and so on. And eventually
+
+[Leo Irakliotis] 10:35:20
+Star, star, star, star space
+
+[Leo Irakliotis] 10:35:24
+All right. And now that we have those things
+
+[Leo Irakliotis] 10:35:28
+stored in memory, the question is, how can I print it horizontally
+
+[Leo Irakliotis] 10:35:37
+And the solution to this problem
+
+[Leo Irakliotis] 10:35:39
+Is to realize that the horizontal version of the block print
+
+[Leo Irakliotis] 10:35:46
+Has as many
+
+[Leo Irakliotis] 10:35:48
+lines as the block letters
+
+[Leo Irakliotis] 10:35:52
+So the first, this is the first realization
+
+[Leo Irakliotis] 10:36:01
+Okay, so Leo will have eight
+
+[Leo Irakliotis] 10:36:07
+And the first line comprises the first line of the first letter followed by the first line of the second letter, followed by the first line of the third letter
+
+[Leo Irakliotis] 10:36:19
+And the second line repeats
+
+[Leo Irakliotis] 10:36:21
+Second line of the first letter, second line of the second letter, second line of the third letter.
+
+[Leo Irakliotis] 10:36:27
+And the third line repeats, third line of the first letter
+
+[Leo Irakliotis] 10:36:32
+third line of the second letter, third line of the third letter. So now we realize that we have a simple loop structure
+
+[Leo Irakliotis] 10:36:43
+And in plain English
+
+[Leo Irakliotis] 10:36:45
+Or pseudocode.
+
+[Leo Irakliotis] 10:36:47
+For line
+
+[Leo Irakliotis] 10:36:50
+In zero
+
+[Leo Irakliotis] 10:36:54
+up to height
+
+[Leo Irakliotis] 10:36:59
+Okay?
+
+[Leo Irakliotis] 10:37:07
+For each
+
+[Leo Irakliotis] 10:37:09
+letter
+
+[Leo Irakliotis] 10:37:14
+In the name we want to print, whether it's Alexander or Leo or Mississippi.
+
+[Leo Irakliotis] 10:37:25
+Print line
+
+[Leo Irakliotis] 10:37:28
+of letter
+
+[Leo Irakliotis] 10:37:31
+Print a blank line and you're done.
+
+[Leo Irakliotis] 10:37:36
+So for the first line. Okay. Print the first line of the first letter, the first line of the second letter, the first line of the third letter
+
+[Leo Irakliotis] 10:37:45
+Change the line for the second line. Second line of first letter, second line of second letter, second line of third letter. For the third line, third line of first letter, third line of second letter, third line of third letter. Fourth line of first letter, fourth line of second letter.
+
+[Leo Irakliotis] 10:38:00
+fourth line or third letter. So we are scanning line by line, and for each line, character by character
+
+[Leo Irakliotis] 10:38:10
+And the challenge now is
+
+[Leo Irakliotis] 10:38:15
+How to pass in the program the information about name
+
+[Leo Irakliotis] 10:38:23
+Alright. So remember, we have these lists here, those arrays that are called
+
+[Leo Irakliotis] 10:38:33
+EO, so I can write my program
+
+[Leo Irakliotis] 10:38:37
+in good in plain Python
+
+[Leo Irakliotis] 10:38:41
+For line
+
+[Leo Irakliotis] 10:38:43
+In range
+
+[Leo Irakliotis] 10:38:47
+Hide
+
+[Leo Irakliotis] 10:38:48
+And height is given because I can measure how big is the list with the letter data, eight lines long, 10 lines long. I can just obtain the height
+
+[Leo Irakliotis] 10:39:01
+Automatically
+
+[Leo Irakliotis] 10:39:04
+As the length of, let's say, the letter L.
+
+[Leo Irakliotis] 10:39:08
+Okay, we're talking length versus height, so that's geometrically a bit confusing, but L is a list that has as many strings as the height of the block letter.
+
+[Leo Irakliotis] 10:39:19
+And we get to use the function length there to get how many lines tall is a letter
+
+[Leo Irakliotis] 10:39:32
+Character, or letter
+
+[Leo Irakliotis] 10:39:37
+In a list that I call
+
+[Leo Irakliotis] 10:39:40
+EO
+
+[Leo Irakliotis] 10:39:42
+LEO are the names of those block lists.
+
+[Leo Irakliotis] 10:39:47
+That we were given
+
+[Leo Irakliotis] 10:39:52
+Print
+
+[Leo Irakliotis] 10:39:55
+This variable is now a list
+
+[Leo Irakliotis] 10:39:59
+And this is a pointer
+
+[Leo Irakliotis] 10:40:03
+Inside that list
+
+[Leo Irakliotis] 10:40:08
+An index.
+
+[Leo Irakliotis] 10:40:14
+So like the first line from the first letter, the first line from the second letter, the first line from the third letter, in this case, the first line from L, the first line from E, the first line from O it will print those. And then after it exhausts all three letters
+
+[Leo Irakliotis] 10:40:30
+I want to print to go to the next line
+
+[Leo Irakliotis] 10:40:35
+And then
+
+[Leo Irakliotis] 10:40:37
+This increases to the second line, third lines, fourth line, and so on. So this is the solution, and the code is available on Github for you to take a look under Mississippi
+
+[Leo Irakliotis] 10:40:54
+Horizontal. I did this
+
+[Leo Irakliotis] 10:40:57
+For Mississippi, not for Leo, because it's much easier to do the example with Leo here on this shared screen and the actual solution on code here
+
+[Leo Irakliotis] 10:41:10
+A couple of things to notice. There is the nested loops
+
+[Leo Irakliotis] 10:41:15
+But I talk for instead of I call it row instead of line here, and there are the letters
+
+[Leo Irakliotis] 10:41:23
+And this is the least
+
+[Leo Irakliotis] 10:41:25
+of what I'm printing. I'm printing M-I-S-S-I-S-S-I-P-P-I, one after the other, and these… these are not characters. These are variables.
+
+[Leo Irakliotis] 10:41:36
+And these are variables that I just imported. I gave you those variables here. I don't repeat the code because I don't want to keep this program too long, but if you look in block letters in the module, these are the letters that I gave you.
+
+[Leo Irakliotis] 10:41:52
+The block letter for M, the block letter for I, the block letter for S, and the block letter for P.
+
+[Leo Irakliotis] 10:42:02
+And instead of having this code inside the program that at least for me, it will make the program too long, it's okay, go to this file, blockletters.python and import this data, these elements
+
+[Leo Irakliotis] 10:42:17
+These are lists M-I-S-B
+
+[Leo Irakliotis] 10:42:20
+And
+
+[Leo Irakliotis] 10:42:23
+In print. Also, I'm doing a little bit of protection here. So, for example, I'm obtaining the height
+
+[Leo Irakliotis] 10:42:31
+Of the block printing by saying, okay, how many
+
+[Leo Irakliotis] 10:42:34
+components, how many elements are in list M. That's the height. And then I verify that all the letters M I S P have the same height
+
+[Leo Irakliotis] 10:42:45
+Okay, line 15. Here is not my proudest moment in coding.
+
+[Leo Irakliotis] 10:42:54
+This is something for you to reflect and tell me what's wrong with line 15. You may
+
+[Leo Irakliotis] 10:43:06
+I don't expect you right away
+
+[Leo Irakliotis] 10:43:12
+To tell me what is wrong with this line
+
+[Leo Irakliotis] 10:43:16
+But
+
+[Leo Irakliotis] 10:43:18
+What I would like you to do is
+
+[Leo Irakliotis] 10:43:23
+to think a little bit
+
+[Leo Irakliotis] 10:43:26
+And maybe tomorrow we can discuss what is wrong with this line.
+
+[Leo Irakliotis] 10:43:29
+So basically line 15 says, you know if the letters have equal height, it's safe to proceed. If somehow, when I was creating those block letters for MISP, I you know was not very careful, and I forgot to make them the same height
+
+[Leo Irakliotis] 10:43:45
+I might run into problems, and rather than running into problems, I'm saying don't print, just instead display an error message
+
+[Leo Irakliotis] 10:43:53
+and stop the program. But if all block letters
+
+[Leo Irakliotis] 10:43:58
+have the same height
+
+[Leo Irakliotis] 10:44:00
+Then run the two loops
+
+[Leo Irakliotis] 10:44:03
+That we discussed
+
+[Leo Irakliotis] 10:44:05
+This is the code that we just wrote by hand, but this core functionality is wrapped around some protective mechanisms to make sure that we don't
+
+[Leo Irakliotis] 10:44:20
+Run out of list space for some letters, because if one letter is eight lines tall and another letter is 6 lines tall
+
+[Leo Irakliotis] 10:44:30
+When we go to the seventh line of one of those letters, there is no seventh line in some other letters, because the heights are not the same, and that will create in line 20 of our code an index out of bounds. Basically, we're trying to access a floor
+
+[Leo Irakliotis] 10:44:48
+That doesn't exist just because someone put a you know marker, use a marker on the elevator and above the 10th floor, road 11, just pushing that 11 doesn't mean that the elevator will go to the 11th floor. If the building has only 10 floors
+
+[Leo Irakliotis] 10:45:02
+So
+
+[Leo Irakliotis] 10:45:06
+That's
+
+[Leo Irakliotis] 10:45:13
+That's the transition, that's the more sophisticated version of the Mississippi problem and
+
+[Leo Irakliotis] 10:45:19
+Why are we even wasting time talking about it? Because
+
+[Leo Irakliotis] 10:45:24
+You know, it's a good idea to see how a simple introductory problem can evolve and become a little bit more sophisticated. Also for years
+
+[Leo Irakliotis] 10:45:33
+And even to this day.
+
+[Leo Irakliotis] 10:45:38
+Computer systems
+
+[Leo Irakliotis] 10:45:41
+Used block letters for headers
+
+[Leo Irakliotis] 10:45:45
+On the terminal, when you interact with the computer, on printouts to emphasize something we didn't you
+
+[Leo Irakliotis] 10:45:52
+40, 50 years ago, computers did not have both phones, large phones. We did not have
+
+[Leo Irakliotis] 10:45:59
+This digital typography tools that we had for the last 40 years. So you need to block letters
+
+[Leo Irakliotis] 10:46:07
+to identify printouts, because you send your job for execution at the computer center, and the results came out, and they were printed, and the clerks at the computation center, they will take all the printouts and stack them on the table
+
+[Leo Irakliotis] 10:46:23
+And on the first page will be the name of the user
+
+[Leo Irakliotis] 10:46:27
+or the name of the program in big block letters that were printed like Mississippi or Leo that we did today, and it's still a very useful display technique for text-based
+
+[Leo Irakliotis] 10:46:42
+messaging for character-based messaging.
+
+[Leo Irakliotis] 10:46:47
+In doing so
+
+[Leo Irakliotis] 10:46:50
+We're also reconnected with the basic concept of a Python list
+
+[Leo Irakliotis] 10:47:01
+And
+
+[Leo Irakliotis] 10:47:03
+I would say, again.
+
+[Leo Irakliotis] 10:47:06
+trying to be a little bit dramatic here, and I'm probably exaggerating, but I would say that at least
+
+[Leo Irakliotis] 10:47:15
+is
+
+[Leo Irakliotis] 10:47:18
+data structure. The only data structure really worth
+
+[Leo Irakliotis] 10:47:22
+mastering. Everything else can be viewed as a derivative
+
+[Leo Irakliotis] 10:47:27
+of the list of the array
+
+[Leo Irakliotis] 10:47:30
+Unfortunately, in Python
+
+[Leo Irakliotis] 10:47:33
+We don't have real arrays, and we pretend that lists in Python are arrays.
+
+[Leo Irakliotis] 10:47:41
+So
+
+[Leo Irakliotis] 10:47:45
+Let's talk about arrays which is the data structure
+
+[Leo Irakliotis] 10:47:54
+One question that comes often at technical interviews is what is an array?
+
+[Leo Irakliotis] 10:48:01
+And you go in
+
+[Leo Irakliotis] 10:48:04
+For a job in software product management, in software development for any entry level job in the field to the extent that this field still exists with everything that is happening with AI, but let's stay optimistic for a few weeks
+
+[Leo Irakliotis] 10:48:20
+And one of the first questions that they ask you is, what is an RA
+
+[Leo Irakliotis] 10:48:27
+This question is as fundamental as applying for a job as a nurse or a doctor. And the first question is
+
+[Leo Irakliotis] 10:48:35
+Where's the heart?
+
+[Leo Irakliotis] 10:48:39
+If you don't know that, there is nothing much we can talk about
+
+[Leo Irakliotis] 10:48:43
+I mean, we can talk about the weather
+
+[Leo Irakliotis] 10:48:46
+We can talk about the cubs, or maybe there isn't much talk about the cubs anyway. But we are not talking about hiring U.S. nurse or a doctor
+
+[Leo Irakliotis] 10:48:55
+If you cannot point with some certainty, where is the heart?
+
+[Leo Irakliotis] 10:49:02
+conversation is over. If we cannot answer with some certainty what is an array, conversation is over. And there is one particular definition of arrays that resonates with most technical managers out there, and that is
+
+[Leo Irakliotis] 10:49:18
+NRA is a contiguous
+
+[Leo Irakliotis] 10:49:27
+Space in memory
+
+[Leo Irakliotis] 10:49:29
+to store
+
+[Leo Irakliotis] 10:49:34
+Data of same type
+
+[Leo Irakliotis] 10:49:40
+And access
+
+[Leo Irakliotis] 10:49:44
+Then randomly
+
+[Leo Irakliotis] 10:49:49
+Via an index.
+
+[Leo Irakliotis] 10:50:02
+And the magic word here is contiguous.
+
+[Leo Irakliotis] 10:50:16
+The second magic word or words is same type
+
+[Leo Irakliotis] 10:50:30
+And array is very much like a well-organized parking garage.
+
+[Leo Irakliotis] 10:50:38
+Where you have an entire floor
+
+[Leo Irakliotis] 10:50:43
+That is separated into equal width
+
+[Leo Irakliotis] 10:50:47
+slots
+
+[Leo Irakliotis] 10:50:48
+One after the other that constitutes a contiguous space
+
+[Leo Irakliotis] 10:50:54
+One slot next to the other
+
+[Leo Irakliotis] 10:50:58
+of same width
+
+[Leo Irakliotis] 10:51:02
+And what you're parking there are
+
+[Leo Irakliotis] 10:51:06
+items of the same type, vehicles
+
+[Leo Irakliotis] 10:51:10
+You can park any passenger vehicle in a garage, whether it's an SUV or a sedan or a convertible or
+
+[Leo Irakliotis] 10:51:24
+Motorbike, you get that
+
+[Leo Irakliotis] 10:51:31
+6, 7 feet wide
+
+[Leo Irakliotis] 10:51:35
+slot in the parking garage for your car, whether you're driving a suburban
+
+[Leo Irakliotis] 10:51:44
+Or a fee at 500
+
+[Leo Irakliotis] 10:51:47
+It's the same type. And you know where you're parked because that slot has a number on it.
+
+[Leo Irakliotis] 10:51:55
+108, 109, 10
+
+[Leo Irakliotis] 10:51:58
+Most of us do not recall that, but if you go… if you're parking at the same garage all the time, you kind of memorize the layout, but when you go to a massive garage like the Millennium Park or the parking stations at O'Hare Airport
+
+[Leo Irakliotis] 10:52:13
+You better memorize
+
+[Leo Irakliotis] 10:52:16
+where your car is parked.
+
+[Leo Irakliotis] 10:52:20
+So that is an array, contiguous space for storing same type data.
+
+[Leo Irakliotis] 10:52:29
+And
+
+[Leo Irakliotis] 10:52:31
+If you remember the word contiguous, you might actually get yourself to question number two in the job interview.
+
+[Leo Irakliotis] 10:52:51
+The first element of ARA is placed at position zero
+
+[Leo Irakliotis] 10:53:01
+And if you know how many elements are in the array, what is the size or the length
+
+[Leo Irakliotis] 10:53:11
+of the array, you know where to find every element in memory by looking at the address
+
+[Leo Irakliotis] 10:53:19
+of this first element
+
+[Leo Irakliotis] 10:53:22
+And the address in memory is just an integer number. Let's say that this element is at byte 2024 in the memory
+
+[Leo Irakliotis] 10:53:30
+And what we are storing here
+
+[Leo Irakliotis] 10:53:34
+are integer numbers
+
+[Leo Irakliotis] 10:53:39
+So the first value in this array is at this address, 1024, and it is an integer number
+
+[Leo Irakliotis] 10:53:48
+How many bytes are in an integer number?
+
+[Leo Irakliotis] 10:53:58
+Dutch, how many bytes or bits for that matter, are in an integer number?
+
+[Q. Dutch] 10:54:09
+In…
+
+[Leo Irakliotis] 10:54:10
+I can hear you
+
+[Q. Dutch] 10:54:13
+You said… I said 10?
+
+[Leo Irakliotis] 10:54:15
+10 bits or 10 bytes
+
+[Q. Dutch] 10:54:18
+10 bits?
+
+[Leo Irakliotis] 10:54:20
+I have 10 bits. Can someone give me 20?
+
+[Shú Perez] 10:54:25
+Uh, 32-bit. Oops.
+
+[Temeeka Glass] 10:54:25
+And I…
+
+[Leo Irakliotis] 10:54:27
+I'll take 32.
+
+[Leo Irakliotis] 10:54:29
+An integer number
+
+[Leo Irakliotis] 10:54:33
+Dutch 10 bits were the size of integer number when I was in elementary school
+
+[Leo Irakliotis] 10:54:40
+In the 70s.
+
+[Leo Irakliotis] 10:54:44
+The computer arithmetic now is 32-bit
+
+[Leo Irakliotis] 10:54:47
+Actually, we're looking at 64, but we have not moved full-fledged into 64-bit. So an integer number is 32 bits, or
+
+[Leo Irakliotis] 10:54:58
+4 bytes and memory address are given in byte size. So if this integer here is at 1024
+
+[Leo Irakliotis] 10:55:07
+And it's
+
+[Leo Irakliotis] 10:55:09
+4 bytes long, it occupies 1,02
+
+[Leo Irakliotis] 10:55:14
+1026 and 1027. Just for this
+
+[Leo Irakliotis] 10:55:20
+Just for this little
+
+[Leo Irakliotis] 10:55:26
+For this number
+
+[Leo Irakliotis] 10:55:28
+That's the address spaces it occupies
+
+[Leo Irakliotis] 10:55:34
+So when you ask what address
+
+[Leo Irakliotis] 10:55:38
+Do I use
+
+[Leo Irakliotis] 10:55:42
+For the second element of the array
+
+[Leo Irakliotis] 10:55:46
+You know that it's going to be at
+
+[Leo Irakliotis] 10:55:52
+28
+
+[Leo Irakliotis] 10:55:54
+And the third element
+
+[Leo Irakliotis] 10:55:58
+Will be at 1,032. You just add 4 bytes
+
+[Leo Irakliotis] 10:56:03
+It's like street numbering in Chicago where houses usually in a standard Chicago lot, houses are two numbers apart.
+
+[Leo Irakliotis] 10:56:12
+But if the loads are wide, then houses are four numbers apart or in Lincoln Park, where the billionaires live, six numbers apart because they have super wide
+
+[Leo Irakliotis] 10:56:24
+Lots.
+
+[Leo Irakliotis] 10:56:26
+But here, you know that each element takes four bytes
+
+[Leo Irakliotis] 10:56:34
+Why? Because same data type.
+
+[Leo Irakliotis] 10:56:37
+And if someone says, give me the address of the third element, you know that this address is the base address of the array
+
+[Leo Irakliotis] 10:56:58
+Plus, the offset
+
+[Leo Irakliotis] 10:57:06
+times the size of the data type
+
+[Leo Irakliotis] 10:57:13
+What is the opposite here? If you want the third
+
+[Leo Irakliotis] 10:57:16
+element from the first element, the offset is 2. So 2 times 8
+
+[Leo Irakliotis] 10:57:22
+Sorry, 2 times 4
+
+[Leo Irakliotis] 10:57:25
+That's the data type size. 8, 1,024 plus 8, 1,032. There is where you're going to find
+
+[Leo Irakliotis] 10:57:32
+All we need is where in an array. All we need to know is where the first element is stored, and then we can find every other element by using that index position
+
+[Leo Irakliotis] 10:57:44
+The next position gives us the offset. Multiply the offset by the size of the data types, and that gives us the memory address. And because we can compute the memory address with simple additions, okay, but you say what additions do you have this multiplication? Yeah, well my integer multiplication
+
+[Leo Irakliotis] 10:58:02
+is repetitive addition. Three times four is 12 because 4 plus 4 plus 4 equals 12
+
+[Leo Irakliotis] 10:58:07
+So this is, I see you should hang on a second. This is very, very fast operation. This is the fastest way we can access data in memory.
+
+[Leo Irakliotis] 10:58:14
+That's why arrays are the data structure, in my humble opinion.
+
+[Shú Perez] 10:58:20
+is, uh, 1024 in the following number is just an example, and including, like, the offset number and everything, because it's just reminding me very much of, like, cybersecurity and networking and stuff.
+
+[Leo Irakliotis] 10:58:27
+Yeah.
+
+[Leo Irakliotis] 10:58:30
+Yeah, those are ridiculously simple examples.
+
+[Leo Irakliotis] 10:58:36
+Most memory… first of all, we don't write memory addresses anymore in plain decimal numbers, 1,024, 1025. We write them in hexadecimal numbers. So, for example.
+
+[Leo Irakliotis] 10:58:49
+If I wanted to do this properly, I might have said that the base address for this is a hexadecimal A7B6 Charlie 8
+
+[Leo Irakliotis] 10:59:02
+So these are now 1, 2, 3, 4, 5, 6, 24
+
+[Leo Irakliotis] 10:59:08
+This is a number, a binary number with 24 bits in it.
+
+[Leo Irakliotis] 10:59:14
+But you know I I don't want to throw hexadecimal notation here, and I'm doing a very simple example. But basically, I'm implying that this is a computer that has only a few thousand bytes in memory, when, in fact, most computers today have billions of bytes
+
+[Leo Irakliotis] 10:59:29
+Therefore, a more realistic address would have been
+
+[Leo Irakliotis] 10:59:34
+1,700,628,58482. That's a memory address, but because this is a really annoying number to write, we convert it to hexadecimal number and we write memory addresses in hex
+
+[Leo Irakliotis] 10:59:49
+Like this. But that's more of a, you know, computer organization, computer engineering stuff that doesn't add much to the discussion. These numbers are just
+
+[Leo Irakliotis] 11:00:00
+silly examples for a symbol array
+
+[Leo Irakliotis] 11:00:07
+Now, again, I will say that arrays
+
+[Leo Irakliotis] 11:00:13
+Or
+
+[Leo Irakliotis] 11:00:16
+90% of the problems we're trying to solve computationally can be done with arrays. And if we have a problem that cannot really be solved with arrays
+
+[Leo Irakliotis] 11:00:31
+More likely, and I'm… this is me being judgmental, more likely it is that we don't know what we're doing.
+
+[Leo Irakliotis] 11:00:41
+Now.
+
+[Leo Irakliotis] 11:00:43
+90% of the problems can be solved with arrays. 9% of the problems we don't know what we're doing, but still can be solved with arrays if we knew what we were doing. And 1% of the problems
+
+[Leo Irakliotis] 11:00:54
+There may be a class of problems out there that cannot be solved with simple arrays, and we need more elaborate data structures.
+
+[Leo Irakliotis] 11:01:07
+It may be embarrassing, but I'll admit it, I have not seen yet a problem
+
+[Leo Irakliotis] 11:01:13
+That cannot be done with arrays.
+
+[Leo Irakliotis] 11:01:16
+But, you know.
+
+[Leo Irakliotis] 11:01:19
+I still live in hope that one day I will see a problem in classical computing that requires something more sophisticated than arrays. Now, in quantum computing
+
+[Leo Irakliotis] 11:01:33
+We… it's a whole different beast, a whole different realm, but we're not there yet. And this is not the best time to talk about quantum computing
+
+[Leo Irakliotis] 11:01:45
+To put in perspective
+
+[Leo Irakliotis] 11:01:49
+Our Lords and overmasters
+
+[Leo Irakliotis] 11:01:51
+Gemini, Claude chat GPD.
+
+[Leo Irakliotis] 11:01:56
+are implemented using arrays.
+
+[Leo Irakliotis] 11:02:00
+Okay, now we call those arrays fancy names.
+
+[Leo Irakliotis] 11:02:04
+Because they're so powerful that they do not resemble the humble array from the 1950s, but the functionality is the same. Large language models are doing in-memory computations of arrays
+
+[Leo Irakliotis] 11:02:20
+And the reason we need this massive data centers and the reason that the price of memory chips of RAM has gone through the roof is because we need to build memory, large memory to store very, very large arrays
+
+[Leo Irakliotis] 11:02:38
+And if arrays are good enough
+
+[Leo Irakliotis] 11:02:43
+For the technology that will make the movies Matrix look like a Sunday morning children's show
+
+[Leo Irakliotis] 11:02:51
+Arrays are good for the rest of us
+
+[Leo Irakliotis] 11:02:56
+So
+
+[Leo Irakliotis] 11:03:01
+You understand arrays, you understand
+
+[Leo Irakliotis] 11:03:04
+50% of
+
+[Leo Irakliotis] 11:03:05
+computer science of programming, and the other 50% is something that is not that important. Again, that means being, you know, opening my big mouth and saying things that, you know, are
+
+[Leo Irakliotis] 11:03:18
+going… can provoke an interesting conversation with some of my colleagues, but that's… that's why I'm saying those things, because I want… I want to provoke a conversation. But really understanding how to use arrays is
+
+[Leo Irakliotis] 11:03:32
+You cannot go too far into this business without understanding arrays
+
+[Leo Irakliotis] 11:03:38
+Now, that's about the importance of arrays
+
+[Leo Irakliotis] 11:03:42
+Here's what sucks with Python
+
+[Leo Irakliotis] 11:03:45
+Python does not have arrays
+
+[Leo Irakliotis] 11:03:49
+Java has arrays, C has arrays, Fortran has arrays, C++ has arrays, Python does not have arrays. Python has lists
+
+[Leo Irakliotis] 11:04:01
+And
+
+[Leo Irakliotis] 11:04:05
+There's not much we can do about it
+
+[Leo Irakliotis] 11:04:08
+We are going for the purposes of this course, pretend
+
+[Leo Irakliotis] 11:04:14
+That Python's lists are arrays, and this is how we're going to pretend about it.
+
+[Leo Irakliotis] 11:04:19
+So let me fire up Python here
+
+[Leo Irakliotis] 11:04:24
+And if my… if the phones are too small
+
+[Leo Irakliotis] 11:04:27
+Just type something on the chat box or unmute and let me know. So
+
+[Leo Irakliotis] 11:04:34
+Here is a simple array
+
+[Leo Irakliotis] 11:04:36
+that has data of similar type.
+
+[Leo Irakliotis] 11:04:42
+I'll say
+
+[Leo Irakliotis] 11:04:44
+Six years ago.
+
+[Leo Irakliotis] 11:04:54
+All right. So what is the data type in these arrays?
+
+[Leo Irakliotis] 11:05:02
+Zara?
+
+[Leo Irakliotis] 11:05:03
+What data type do we have in this array
+
+[Zahra Nadeem] 11:05:08
+A list of
+
+[Zahra Nadeem] 11:05:11
+Quote numbers
+
+[Leo Irakliotis] 11:05:13
+What is the data type? It doesn't matter what you think the numbers represent, what kind of numbers are they?
+
+[Zahra Nadeem] 11:05:21
+Integers
+
+[Leo Irakliotis] 11:05:22
+Now, what do they mean? Well, in the absence of any information, that's something that comes through the more appropriate name of the array or the comments we have in the actual code
+
+[Leo Irakliotis] 11:05:37
+Those may look like zip codes around Chicago.
+
+[Leo Irakliotis] 11:05:41
+But how do you know that?
+
+[Leo Irakliotis] 11:05:45
+Right? Maybe the array needs to have that's why naming variables is important. So if they are variable was better named, for example
+
+[Leo Irakliotis] 11:06:18
+So
+
+[Leo Irakliotis] 11:06:19
+Here is a more descriptive
+
+[Leo Irakliotis] 11:06:22
+Array name, right? So, zip codes, you get it.
+
+[Leo Irakliotis] 11:06:26
+Or there is something in the comments
+
+[Leo Irakliotis] 11:06:30
+in the program that tells you what this is, or the name of the file where I'm pumping that data from is there.
+
+[Leo Irakliotis] 11:06:40
+An integer number in Python is 32 bits long, or 5 bytes long
+
+[Leo Irakliotis] 11:06:46
+One byte is 8-bit, so that's why we go back and forth with those numbers.
+
+[Leo Irakliotis] 11:06:53
+So this array has size
+
+[Leo Irakliotis] 11:06:57
+12 bytes
+
+[Leo Irakliotis] 11:07:02
+In
+
+[Leo Irakliotis] 11:07:08
+I don't want to say real because I'll get in trouble. In a more traditionally organized programming language
+
+[Leo Irakliotis] 11:07:17
+If I asked, okay, I'll ask, let me revert to something easier to type and say, okay, what is the third element of this array?
+
+[Leo Irakliotis] 11:07:25
+All right, there it is, 6065. If I said what is the fourth element of this array
+
+[Leo Irakliotis] 11:07:33
+I'll get yelled at
+
+[Leo Irakliotis] 11:07:37
+Okay.
+
+[Leo Irakliotis] 11:07:38
+That's what an array is in any language. You cannot access an element in this array that does not exist. You cannot go to the mandeline center on campus and expect the elevator to take you to the 18
+
+[Leo Irakliotis] 11:07:53
+floor
+
+[Leo Irakliotis] 11:07:55
+Unless you're willing to write a $50 million check to the university to build another four floors on Mandelion and name those four floors after you, there is no way on God's green earth that elevator will ever go to the 18th floor because it doesn't exist.
+
+[Leo Irakliotis] 11:08:10
+And if you're some sort of engineering genius and you attach rockets on the elevator
+
+[Leo Irakliotis] 11:08:17
+to boost the elevator going up, that elevator car is going to punch through the roof
+
+[Leo Irakliotis] 11:08:24
+and fall into the lake, and you'll die a horrible death.
+
+[Leo Irakliotis] 11:08:28
+But still, you won't be on the 18th floor of the Mandelion Center. No matter what you type here
+
+[Leo Irakliotis] 11:08:41
+How nice you are, there is no fourth element in this array. And in a traditionally organized language
+
+[Leo Irakliotis] 11:08:48
+Like Java or C plus plus there is no way once you create an array, there is no way to add
+
+[Leo Irakliotis] 11:08:59
+Any more elements. It's like building
+
+[Leo Irakliotis] 11:09:02
+a high-rise building with 10 floors. Once the construction is done and you rent all the apartments
+
+[Leo Irakliotis] 11:09:11
+And you get a good reputation as a rental property and you get more people coming asking you to rent an apartment. There is nothing you can do.
+
+[Leo Irakliotis] 11:09:19
+You cannot add more floors in an existing building without a significant effort. You can do it
+
+[Leo Irakliotis] 11:09:27
+But it's not as trivial as giving someone a paper to sign and a rental agreement to sign and then handing them the keys to an apartment that doesn't exist.
+
+[Leo Irakliotis] 11:09:38
+You have to put significant effort to make that 10 story building a 20 story building. Now, if you're a smart landlord and you're popular and people want to rent your apartments, you keep jacking up the rents and you know some people move out because at some point you're basically extort it's extortion. It's not rental anymore
+
+[Leo Irakliotis] 11:09:57
+And
+
+[Leo Irakliotis] 11:09:58
+You let those who want to pay three times as much move in. Here ends the lesson in Chicago real estate business models.
+
+[Leo Irakliotis] 11:10:07
+Now
+
+[Leo Irakliotis] 11:10:09
+In Python, and that's why I'm saying Python does not have real arrays
+
+[Leo Irakliotis] 11:10:15
+I can take this existing array
+
+[Leo Irakliotis] 11:10:25
+And are expanded just like this.
+
+[Leo Irakliotis] 11:10:30
+And now it has four elements
+
+[Leo Irakliotis] 11:10:35
+It can… this cannot be done in C or Java or any
+
+[Leo Irakliotis] 11:10:39
+Traditionally organized systems language compiled static language. Why? Because when we write the program in Java.
+
+[Leo Irakliotis] 11:10:49
+We do things in two steps. First, we let the system know how much memory it needs to execute the program, and then we execute the program. And if during the execution of the program we change our mind about how much memory it needed
+
+[Leo Irakliotis] 11:11:03
+Tough luck. The program will crash
+
+[Leo Irakliotis] 11:11:13
+Python is a little bit more gentle with this and says, you know what? I'm not going to give you a fixed space for the array
+
+[Leo Irakliotis] 11:11:23
+As far as you're concerned, this array is dynamic, is elastic. I can keep adding things to it
+
+[Leo Irakliotis] 11:11:33
+without you having to do the heavy lifting that you would have done if this was NRA in C++ or in Java.
+
+[Leo Irakliotis] 11:11:42
+And we are going to see how this elasticity works
+
+[Leo Irakliotis] 11:11:46
+Tomorrow
+
+[Leo Irakliotis] 11:11:48
+And that will set you up for your first assignment.
+
+[Leo Irakliotis] 11:11:54
+For the course
+
+[Leo Irakliotis] 11:11:57
+As I mentioned, I want, especially for a small group like this, I would like those assignments to be done mostly in class. So what I would like to do with this assignment tomorrow is set everything up in class
+
+[Leo Irakliotis] 11:12:12
+Give you a couple of days to figure things out. And when we meet next week or Monday
+
+[Leo Irakliotis] 11:12:19
+We solve it together in class. So I don't expect you to have anything ready, but I mean, if you have time to finish it, great.
+
+[Leo Irakliotis] 11:12:26
+But the idea is that I would like to ask, I don't know, seven of you, so chances are more than 10% that one of you will be asked or two of you will be asked, hey
+
+[Leo Irakliotis] 11:12:40
+Share the screen and do some coding together.
+
+[Leo Irakliotis] 11:12:43
+Okay
+
+[Leo Irakliotis] 11:12:44
+So we'll see how to recreate this elasticity of lists
+
+[Leo Irakliotis] 11:12:52
+in Python, and then we're going to talk about a little bit more seriously about lists in Python, because I keep but mouthing lists, but at the end of the day there is a reason Python is so popular
+
+[Leo Irakliotis] 11:13:06
+And the way it organizes lists is definitely one of the part of the popularity. And it's actually worth exploring
+
+[Leo Irakliotis] 11:13:15
+Questions, comments
+
+[Leo Irakliotis] 11:13:20
+All right, everyone.
+
+[Leo Irakliotis] 11:13:23
+I'll see you, same place, same time tomorrow.
+
+[Shú Perez] 11:13:27
+Okay.
+
+[Leo Irakliotis] 11:13:28
+Take care.
+
+[Shú Perez] 11:13:28
+Thank you
+
+[Temeeka Glass] 11:13:28
+Thank you!
+
+[Alexander Garcia] 11:13:31
+Thank you.
+
+[Leo Irakliotis] 11:31:15
+Hello, hello everyone
+
+[Leo Irakliotis] 11:31:32
+Before we get started, are there any questions, any comments, any requests
+
+[Leo Irakliotis] 11:31:44
+All right
+
+[Leo Irakliotis] 11:31:46
+We'll get started and
+
+[Leo Irakliotis] 11:31:50
+Today, we're going to take a little bit more of a dive into programming last week we talked a little bit about systems and concepts and tools. So we're going to start putting things
+
+[Leo Irakliotis] 11:32:05
+together and this is where the course becomes a little bit more interactive. This is where the conversation becomes more student owned and driven than me broadcasting
+
+[Leo Irakliotis] 11:32:21
+in front of a camera here on Zoom. And let's say, let's see here. I need some help from, let's say, Evan, how are… how about opening a
+
+[Leo Irakliotis] 11:32:34
+Shell terminal on your screen and sharing it with us.
+
+[Leo Irakliotis] 11:33:03
+Awesome.
+
+[Leo Irakliotis] 11:33:07
+Let's get some troubleshooting done first to see where you are. Let's see if you can run Windows subsystem Linux, WSL.
+
+[Leo Irakliotis] 11:33:28
+And anyone else, it takes a few seconds the first time, so you're… just give it some time. There it is. Now, and everyone else that wants to follow along what we're going to do here with
+
+[Leo Irakliotis] 11:33:36
+With Evan. You're welcome to. So the first thing we're going to do is
+
+[Leo Irakliotis] 11:33:42
+To see where we are and that information is already displayed on our screen. The prompt, and we have to be careful now with terminology because prompt for the last two or three years has a totally different meaning is what we tell in large language model to do for us
+
+[Leo Irakliotis] 11:33:59
+But back in my day, prompt was that green and blue stuff that you see on the shared screen.
+
+[Leo Irakliotis] 11:34:09
+The green stuff is the user
+
+[Leo Irakliotis] 11:34:13
+who is the owner of this computer? And the blue stuff is where in the file system is are we now? This is a customized prompt that it's the default also customization for the command
+
+[Leo Irakliotis] 11:34:30
+prompt in the bash cell in one of the ways we have to interact with Unix or Linux
+
+[Leo Irakliotis] 11:34:36
+There are many ways to customize it. You can make that prompt display the time, you can make that prompt display the date
+
+[Leo Irakliotis] 11:34:44
+You can change that cursor that you see there blinging as a vertical line to a blinking block or to an underscore. You can customize the colors. But what we have here is a basic command prompt
+
+[Leo Irakliotis] 11:34:58
+On a Linux environment. And it says that we are on the C drive of this user's computer wherein the
+
+[Leo Irakliotis] 11:35:10
+Storage space allocated for users and there is a user whose username is EPRYM.
+
+[Leo Irakliotis] 11:35:19
+Evan Rydak, and I guess that B is your middle name.
+
+[Leo Irakliotis] 11:35:24
+So
+
+[Leo Irakliotis] 11:35:25
+If we do an LS space minus AL always in everything in lowercase
+
+[Leo Irakliotis] 11:35:33
+So if you type there ls minus AL
+
+[Leo Irakliotis] 11:35:35
+We are going to see and hit enter no space after the dash
+
+[Leo Irakliotis] 11:35:44
+Yes, space before dash, no space after the dash.
+
+[Leo Irakliotis] 11:35:56
+The other way
+
+[Leo Irakliotis] 11:36:02
+So these are the components of this folder. And because we are the user folder in a typical Windows machine, we have all sort of stuff that are related to the operating system. You might recognize items there. There is a folder called videos that may has movies. There is a folder called start menu. That's what you have on the start menu
+
+[Leo Irakliotis] 11:36:24
+At the bottom of your screen, there is on top, there is my documents, that's where your Microsoft documents and all that work. But for now, let's create a separate space to do stuff for this course without messing up with the rest of the file system. So let's make a directory, let's make a folder
+
+[Leo Irakliotis] 11:36:41
+Like, let's call it sandbox. So the command is mkdir mkdir
+
+[Leo Irakliotis] 11:36:50
+space sandbox
+
+[Leo Irakliotis] 11:36:53
+So you tell the computer, make a directory that you call sandbox. And you can give it any name you want. I call it sandbox because that's the standard name for an experimental space on storage where you can do silly things and we don't mind if we lose it or anything
+
+[Leo Irakliotis] 11:37:10
+We could have typed sandbox with an uppercase S. We could have typed sandbox with a lowercase s like this, but an uppercase B in the standard practice in Unix operating systems is to keep things as simple as possible without having to press the shift key now and then
+
+[Leo Irakliotis] 11:37:28
+So all in lowercase
+
+[Leo Irakliotis] 11:37:31
+We need now to go inside that folder. So we'll say CD, which stands for change directory
+
+[Leo Irakliotis] 11:37:41
+But here's what I want you to do, Evan. Type S A just that
+
+[Leo Irakliotis] 11:37:47
+And press the tab key
+
+[Leo Irakliotis] 11:37:51
+Autocomplete. If you type the first few names of the artifact and you press tab, you will be given, if there is only one artifact that starts with SA, as is the case here, it will autocomplete to that. If there are multiple, it will give you all the artifacts that started with SA, and then you can select which one you want to do
+
+[Leo Irakliotis] 11:38:13
+And you notice press enter, press tab one more time
+
+[Leo Irakliotis] 11:38:18
+And you see that slash after sandbox. That's a visual indication that this artifact is a folder. It's a directory.
+
+[Leo Irakliotis] 11:38:29
+You can delete that backslash for a second, Evan. And now press enter and it will take you into that folder and you'll see how the blue part of the command prompt has changed. It says now you're inside this folder. And if you do an LS minus AL
+
+[Leo Irakliotis] 11:38:44
+To see the contents of everything here, there is nothing here. So let's do an LS space minus AL
+
+[Leo Irakliotis] 11:38:53
+And what you see basically there are only two items, a dot and a single dot. In Unix, the dot means the current directory
+
+[Leo Irakliotis] 11:39:04
+Because sometimes we need to reference like when you go in the mall and you see that map and says you are here, that dot is the you are here part
+
+[Leo Irakliotis] 11:39:13
+The dot dot is something very interesting just for the sake of it, just to discover it for ourselves, seven type CD space dot dot
+
+[Leo Irakliotis] 11:39:23
+And press enter
+
+[Leo Irakliotis] 11:39:25
+See what happens to the blue prompt. It went up to the parent folder.
+
+[Leo Irakliotis] 11:39:30
+So dot dot is the parent folder. And if you type cd dot dot again, but don't type it
+
+[Leo Irakliotis] 11:39:35
+Delete it
+
+[Leo Irakliotis] 11:39:37
+and press the upper arrow once.
+
+[Leo Irakliotis] 11:39:41
+The upper arrow, we can traverse in the previous commands as many times as we want. So press enter here
+
+[Leo Irakliotis] 11:39:49
+One more… again, up arrow once
+
+[Leo Irakliotis] 11:39:54
+And Andrew
+
+[Leo Irakliotis] 11:39:55
+up arrow once and enter. We are going this way one more time. We're going all the way to the root of the file system, and when the prompt, the blue prompt, is reduced to just a forward slash, that's where we are at the top of the storage. And if we do a list ls-l.
+
+[Leo Irakliotis] 11:40:13
+Evan
+
+[Leo Irakliotis] 11:40:15
+You are going to see the contents of everything in the file system.
+
+[Leo Irakliotis] 11:40:22
+AL. Okay, that's fine. So this is what the file system for a Linux computer looks like for a Unix computer. And everything here is named so
+
+[Leo Irakliotis] 11:40:37
+for a reason. For example, MNT is the mount point where you attach storage devices. So that's why before we were inbound forward slash C
+
+[Leo Irakliotis] 11:40:53
+That was the seed drive, the seed disc for that computer. Now we have to remember how to get back to where we were. So if we forgot that we were at Mount forward slash e forward slash users forward slash E pr y, whatever forward slash sandbox
+
+[Leo Irakliotis] 11:41:11
+Here is how to go back to the user home directory in a very simple step. So Evan, what I want you to type is CD space
+
+[Leo Irakliotis] 11:41:21
+And then the t character, which is usually shift and the key left to number one. There, press enter.
+
+[Leo Irakliotis] 11:41:40
+PWD, print working directory
+
+[Leo Irakliotis] 11:41:46
+We're back home. LS minus AL.
+
+[Leo Irakliotis] 11:41:58
+Oopsie.
+
+[Leo Irakliotis] 11:42:00
+My bad. This is Windows. Never mind
+
+[Leo Irakliotis] 11:42:07
+Never mind. Evan, do me a favor. CD space forward slash
+
+[Leo Irakliotis] 11:42:14
+MNT for mount
+
+[Leo Irakliotis] 11:42:18
+forward slash C
+
+[Leo Irakliotis] 11:42:23
+Forward slash us then tab
+
+[Leo Irakliotis] 11:42:27
+Uppercase U, sorry, uppercase U
+
+[Leo Irakliotis] 11:42:30
+Then tab
+
+[Leo Irakliotis] 11:42:35
+Then just E lower case e then tab
+
+[Leo Irakliotis] 11:42:41
+Then lowercase s, then Tam
+
+[Leo Irakliotis] 11:42:43
+And press enter
+
+[Leo Irakliotis] 11:42:45
+All right, so now we're back into our sandbox
+
+[Leo Irakliotis] 11:42:49
+Let's run Python. Let's find out if Python is installed on these computer just like Python 3
+
+[Leo Irakliotis] 11:42:56
+Altogether, Python and the number three together.
+
+[Leo Irakliotis] 11:43:01
+And also, so now we're in Python
+
+[Leo Irakliotis] 11:43:06
+Show me how good you are at math, 2 plus 2 and press enter.
+
+[Leo Irakliotis] 11:43:16
+All right. So
+
+[Leo Irakliotis] 11:43:18
+Very simple, very basic Python literal operations.
+
+[Leo Irakliotis] 11:43:24
+Now, press the up arrow key one more time
+
+[Leo Irakliotis] 11:43:29
+And go back with a left arrow key and enclose those tools
+
+[Leo Irakliotis] 11:43:35
+In double quotes, one double quote before and one double quote after
+
+[Leo Irakliotis] 11:43:48
+Before and after each number. So one double quote before the first two and then a double code after
+
+[Leo Irakliotis] 11:43:55
+Okay, those are two double quotes. You need one double coat on either side.
+
+[Leo Irakliotis] 11:44:05
+Delete half the double quotes. There you are.
+
+[Leo Irakliotis] 11:44:13
+And same from the front
+
+[Leo Irakliotis] 11:44:22
+No, there shouldn't be any twings. One double coat on either side of the number
+
+[Leo Irakliotis] 11:44:44
+Each number
+
+[Leo Irakliotis] 11:44:45
+needs to have a double quote before it and a double code after it
+
+[Leo Irakliotis] 11:45:01
+Now, those are four double quotes. I want a total
+
+[Leo Irakliotis] 11:45:04
+Those are eight double quotes. I want a total of four, I want one double quote before the number
+
+[Leo Irakliotis] 11:45:13
+Just press delete once there
+
+[Leo Irakliotis] 11:45:21
+And one more two positions to the right and press delete once again
+
+[Leo Irakliotis] 11:45:31
+There. So that is double code to double code. Do the same for the second number.
+
+[Leo Irakliotis] 11:45:44
+Why do we call them double quotes? Because they have two of those vertical lines. They're also the single chord, which is the single
+
+[Leo Irakliotis] 11:45:52
+So a double quote is a single character that has the two vertical lines. That's why it's called double. Now, if we press enter here, what do you think we're going to get Bella?
+
+[Leo Irakliotis] 11:46:04
+Before
+
+[Bella Fiorucci] 11:46:04
+22.
+
+[Leo Irakliotis] 11:46:06
+What's that
+
+[Bella Fiorucci] 11:46:07
+22.
+
+[Leo Irakliotis] 11:46:08
+Awesome. Let's find out if that's correct.
+
+[Leo Irakliotis] 11:46:12
+And you see that Python, even though we went through all this pain to say that these are not numbers, but
+
+[Leo Irakliotis] 11:46:20
+letters, characters, symbols
+
+[Leo Irakliotis] 11:46:22
+And I want to put those two symbols next to each other. Okay, so those two symbols next to each other give you another symbol that the symbol 22. That's not the number 22, but the symbols 22 next to each other in single… enclosed in single codes
+
+[Leo Irakliotis] 11:46:39
+Because Python prefers to show symbols in single codes. I prefer to show symbols. In double codes, it doesn't matter in Python
+
+[Leo Irakliotis] 11:46:49
+The difference is that a single code does not require a shift key. The double code requires a shift key to
+
+[Leo Irakliotis] 11:46:59
+Press the shift key, so it takes two keystrokes to produce. Other than that, in Python, double and single codes are identical
+
+[Leo Irakliotis] 11:47:08
+In other programming languages, like Java, they have different meaning, but in Python, we don't have to worry about that. So now
+
+[Leo Irakliotis] 11:47:18
+Let's do some math. Who is good with money here? Any business majors?
+
+[Leo Irakliotis] 11:47:26
+Any aspiring entrepreneurs
+
+[Leo Irakliotis] 11:47:30
+Any aspiring billionaires
+
+[Leo Irakliotis] 11:47:33
+Oligarchs
+
+[Leo Irakliotis] 11:47:36
+Mere millionaires
+
+[Leo Irakliotis] 11:47:39
+All right.
+
+[Leo Irakliotis] 11:47:42
+So
+
+[Leo Irakliotis] 11:47:43
+Evan
+
+[Leo Irakliotis] 11:47:45
+No one wants to help.
+
+[Leo Irakliotis] 11:47:49
+So here's what I want you to think. Everyone, not just everyone, actually, Evan will execute what we ask him to, but this is a problem for everyone.
+
+[Leo Irakliotis] 11:48:01
+I want to find
+
+[Leo Irakliotis] 11:48:05
+If I have
+
+[Leo Irakliotis] 11:48:08
+Evan, keep that Python window running, because we'll come back to it for a second. But before we go back, let me state the problem. I want… I have $1,000
+
+[Leo Irakliotis] 11:48:19
+And I want to invest them in a interest-bearing account that produces 4.5%
+
+[Leo Irakliotis] 11:48:30
+every year
+
+[Leo Irakliotis] 11:48:32
+So how much money, how much interest will I collect at the end of the first year, Melina?
+
+[Leo Irakliotis] 11:48:38
+$1,000 and 4.5%, how much interest do I get?
+
+[Leo Irakliotis] 11:48:42
+After the first year
+
+[melina ammann] 11:48:54
+$1,045.
+
+[Leo Irakliotis] 11:48:56
+Right. So I'll get the principal $1,045 will be my interest. Okay, so that's that simple because we say, okay, 4.5%, that's about $4.5 per $100. There are 10 blocks of $100 in $1,000, 10 times 4.5
+
+[Leo Irakliotis] 11:49:11
+is $45. Okay, great. Now
+
+[Leo Irakliotis] 11:49:17
+If I kept the money in the same account, in the same interest-bearing account
+
+[Leo Irakliotis] 11:49:24
+How can I find? I don't want how much I will get, but I want an answer. How can I find how much money I will have at the end of the second year? And again, I'm not interested in the amount of money
+
+[Leo Irakliotis] 11:49:39
+I'm interested in the technique that will give me that answer
+
+[Leo Irakliotis] 11:49:45
+To make things challenging, I run that technique to be expressed in arithmetic that a third grader can understand.
+
+[Leo Irakliotis] 11:49:54
+And as a reminder, since it's been a while since you may have been a third grader, at third grade, we know addition, subtraction, multiplication, and division.
+
+[Leo Irakliotis] 11:50:07
+10 takers
+
+[Leo Irakliotis] 11:50:09
+4.0% annual interest. How much money do I have after two years when the initial investment is $1,000? And again, I don't want the amount of money.
+
+[Leo Irakliotis] 11:50:20
+I want the technique, I want the
+
+[Leo Irakliotis] 11:50:25
+solution, the mathematical solution that Evan will implement for us
+
+[Leo Irakliotis] 11:50:48
+Do we need to have a conversation about saving and investing for your future?
+
+[Leo Irakliotis] 11:50:53
+Because you may think it's not for me, it's too early, but that age 62 is around the corner before you even know it.
+
+[Leo Irakliotis] 11:51:06
+All right.
+
+[Leo Irakliotis] 11:51:08
+So
+
+[Leo Irakliotis] 11:51:09
+How did Melina found it was $45 and Melina, please don't tell me that you looked it up on chat GPD.
+
+[Leo Irakliotis] 11:51:15
+Okay, so how do we do it? Here is the trick
+
+[Leo Irakliotis] 11:51:24
+We take the principle
+
+[Leo Irakliotis] 11:51:27
+1,000
+
+[Leo Irakliotis] 11:51:29
+Ever.
+
+[Leo Irakliotis] 11:51:31
+$1,000, 1,000.
+
+[Leo Irakliotis] 11:51:33
+Just the number of thousand. And we multiply it by itself plus the interest. How do we multiply a number by itself? What do we do? We multiply it with one, right?
+
+[Leo Irakliotis] 11:51:46
+And then to that one, we're adding the interest. So type the multiplication symbol there, and then open a parenthesis
+
+[Leo Irakliotis] 11:51:54
+And type 1 plus
+
+[Leo Irakliotis] 11:51:59
+0.045.
+
+[Leo Irakliotis] 11:52:04
+That is the principle 100% plus the interest, 4.5%.
+
+[Leo Irakliotis] 11:52:12
+He did it, Evan
+
+[Leo Irakliotis] 11:52:14
+That's your $1,045 that Melina found
+
+[Leo Irakliotis] 11:52:18
+Now, for the second year, and we're going to do some editing. Press the up arrow to go back there, go all the way to the beginning
+
+[Leo Irakliotis] 11:52:28
+And in front of 1000, using the left key
+
+[Leo Irakliotis] 11:52:33
+Open the parenthesis
+
+[Leo Irakliotis] 11:52:40
+Go all the way to the back
+
+[Leo Irakliotis] 11:52:47
+Close the parentheses
+
+[Leo Irakliotis] 11:52:49
+And multiplying
+
+[Leo Irakliotis] 11:52:53
+By open parenthesis 1 plus 0.045.
+
+[Leo Irakliotis] 11:53:05
+Gross parentheses and hit it
+
+[Leo Irakliotis] 11:53:08
+That's how much money I will have at the end of the second year in the same interest account. What? I took the $1,045
+
+[Leo Irakliotis] 11:53:17
+Evan, do me a favor if you can highlight the first pair of parentheses like from 1000 to the right there, all the way to the left.
+
+[Leo Irakliotis] 11:53:27
+That's the first year
+
+[Leo Irakliotis] 11:53:30
+Money. That's the money that Melina told us about
+
+[Leo Irakliotis] 11:53:34
+So I take that money and I reinvest for another year at the same interest rate
+
+[Leo Irakliotis] 11:53:40
+So I took that $1,400, the highlighted part is $1,045.
+
+[Leo Irakliotis] 11:53:47
+For a year at 4.5% will give me $1,092.
+
+[Leo Irakliotis] 11:53:53
+And change
+
+[Leo Irakliotis] 11:53:56
+And if I want to find how much money I will have after 3 years
+
+[Leo Irakliotis] 11:54:01
+I will have to repeat what I've done. So even up arrow all the way to the left.
+
+[Leo Irakliotis] 11:54:11
+Open parenthesis
+
+[Leo Irakliotis] 11:54:16
+All the way to the right, close parentheses
+
+[Leo Irakliotis] 11:54:26
+Times
+
+[Leo Irakliotis] 11:54:28
+open parentheses
+
+[Leo Irakliotis] 11:54:31
+One point! Don't add this time. Let's cut some typing. 1.045.
+
+[Leo Irakliotis] 11:54:37
+Close parentheses and hit it
+
+[Leo Irakliotis] 11:54:40
+And there is how much money I will have at the end of third year. And if I want to do it for a fourth year, again, we'll have to go back, re-parenthesize, multiply. Okay, this is getting ridiculous, because if I… if Melina says, all right, Evan, I have that money there for 15 years, can you find me the interest
+
+[Leo Irakliotis] 11:54:57
+The poor guy is going to get arthritis just by going and re-adding and doing this parenthesis 15 times to get. But now let's step forward from second or third grade mathematics, arithmetic, and tell me if you see a mathematical operation here
+
+[Leo Irakliotis] 11:55:13
+that might be more efficient
+
+[Leo Irakliotis] 11:55:14
+to compute that number.
+
+[Leo Irakliotis] 11:55:18
+What are we doing here essentially in mathematics. If you saw the last 3 expressions that Evan wrote, what are we doing here?
+
+[Bella Fiorucci] 11:55:28
+Exponents?
+
+[Leo Irakliotis] 11:55:30
+Yes, for every year, that money stays into the interest account. We multiply it with the
+
+[Leo Irakliotis] 11:55:40
+the compound rate, which is the principal plus
+
+[Leo Irakliotis] 11:55:45
+The interest
+
+[Leo Irakliotis] 11:55:47
+All right. How do we do this in
+
+[Leo Irakliotis] 11:55:52
+In Python. All right, right where you are, Evan, type two stars. No, no, no, no, no, no, just two stars for Python
+
+[Leo Irakliotis] 11:56:00
+And then the number three
+
+[Leo Irakliotis] 11:56:03
+And hit it
+
+[Leo Irakliotis] 11:56:05
+There is the three year interest. So now if someone says, okay, give me the 15 year interest, replace three with 15, and in 15 years, that's how much money you are going to get on a $1,000 investment
+
+[Leo Irakliotis] 11:56:20
+Let's try 30. See how good we're doing after 30 years
+
+[Leo Irakliotis] 11:56:27
+After 30 years, you quadrupled your investment and that's a very moderate rate. Let's say that your investment grows at the average rate of an S&P index. So go inside there, Evan and replace the 045 with 09
+
+[Leo Irakliotis] 11:56:49
+No, not 099. 0.9 would have been nice, but that's 90% interest rate, doesn't happen. Okay, let's, and now let's say 30 years
+
+[Leo Irakliotis] 11:57:01
+How much money is that?
+
+[Leo Irakliotis] 11:57:03
+Look at that
+
+[Leo Irakliotis] 11:57:05
+And if that doesn't convince you to start saving on a 401k or 403B as soon as you get your first job, I don't know what will convince you
+
+[Leo Irakliotis] 11:57:15
+But here, we took a problem, we started with simple arithmetic that we don't have to be any fancy with mathematics when we're solving a problem
+
+[Leo Irakliotis] 11:57:24
+Because, okay, if you know the mathematics, great
+
+[Leo Irakliotis] 11:57:28
+But most of us abandon mathematics at
+
+[Leo Irakliotis] 11:57:32
+I don't know, grade 10 or 11. We… we… very few of us, unless we are… we have a daily interaction with that kind of mathematical abstraction, very few of us bother with more advanced mathematics beyond, okay, exponentiation
+
+[Leo Irakliotis] 11:57:49
+All right. And but exponentiation is a great mathematical tool for something as practical as compounding interest, whether this is for a loan or for investment or for what have you.
+
+[Leo Irakliotis] 11:58:03
+And so far
+
+[Leo Irakliotis] 11:58:05
+We've been using Evan as a black box. We were giving Evan the numbers and he was spitting back the answers by typing things.
+
+[Leo Irakliotis] 11:58:14
+There is a more efficient way to do this in programming. So, Evan, thanks for sharing
+
+[Leo Irakliotis] 11:58:19
+And I'll take over sharing from here
+
+[Leo Irakliotis] 11:58:30
+Where am I? Let's make a directory for week two here and go to week two
+
+[Leo Irakliotis] 11:58:43
+And I will start a similar program
+
+[Leo Irakliotis] 11:58:49
+Compute interest
+
+[Leo Irakliotis] 11:58:52
+Quality interest, just to keep things
+
+[Leo Irakliotis] 11:58:55
+I'm in my editor, I'll go into edit mode and I will again write what we were doing with Evan. What if Evan is not available? What if I want to do this at 3 a.m.
+
+[Leo Irakliotis] 11:59:07
+And Evan's phone is on silent
+
+[Leo Irakliotis] 11:59:10
+Okay, and also I think somewhere on the faculty manual for the university, there is something about do not call students at 3 a.m.
+
+[Leo Irakliotis] 11:59:19
+So
+
+[Leo Irakliotis] 11:59:24
+I will write a quick program
+
+[Leo Irakliotis] 11:59:28
+That will get all the information. So what is the principle
+
+[Leo Irakliotis] 12:01:24
+I haven't written a print statement this ridiculous in years, I'm not sure if it's going to work, so let's see if the program runs. Python ingress
+
+[Leo Irakliotis] 12:01:34
+Okay, Python 3 about that.
+
+[Leo Irakliotis] 12:01:38
+principal amount $1,000, interest rate 9%.
+
+[Leo Irakliotis] 12:01:51
+Okay, fine, you want me to write 0.09%
+
+[Gregor, Erica] 12:02:04
+Because you made it an integer, and that's a float number?
+
+[Leo Irakliotis] 12:02:11
+Yes
+
+[Leo Irakliotis] 12:02:40
+The mean rate is not defined. Interest rate. Okay, all right. So I call the interest rate the variable names interest rate. And in the print statement, I just called it rate. So I need to edit this
+
+[Leo Irakliotis] 12:03:08
+There's the same amount. Okay
+
+[Leo Irakliotis] 12:03:14
+So now, every time we have to
+
+[Leo Irakliotis] 12:03:17
+do something like this. We can run this program instead of bothering
+
+[Leo Irakliotis] 12:03:23
+Evan
+
+[Leo Irakliotis] 12:03:23
+Couple of things here about the program
+
+[Leo Irakliotis] 12:03:32
+There was this mistake that I was entering here a fractional number, a decimal number, and I was treating as an integer. So that was wrong. If I wanted to keep everything integer because what if I work with a bank where the interest rates are always in there, 8%, 9%, there's nothing like 9, 5% or 9.8%, everything is
+
+[Leo Irakliotis] 12:03:54
+integers, I could have taken an integer value for the interest rate and then divided by 100 to get the normalized value, but I'll leave it here, that was a good learning moment for all of us, especially myself. But what I don't like here is the
+
+[Leo Irakliotis] 12:04:11
+Appearance.
+
+[Leo Irakliotis] 12:04:11
+When I run the program
+
+[Leo Irakliotis] 12:04:22
+Let's say 10% interest rate over 30 years
+
+[Leo Irakliotis] 12:04:28
+You know, a principle of 1000 what
+
+[Leo Irakliotis] 12:04:33
+At 0.1, what is that 0.1 means, right? Yields this amount. Well, money is really denominated with two decimal points, so all these decimal points here after the first 40 cents
+
+[Leo Irakliotis] 12:04:48
+are kind of superfluous. And also, when we talk about currency, there is also a comma separator for the thousands. So there is a presentation
+
+[Leo Irakliotis] 12:04:58
+issue here that I want to address and I'm going to just throw it out here so that we can be aware of it and we don't have
+
+[Leo Irakliotis] 12:05:15
+Don't have to worry about it yet, but it is a
+
+[Leo Irakliotis] 12:05:24
+Something to keep in mind.
+
+[Leo Irakliotis] 12:06:27
+And I'm going to explain second what I'm doing here. First of all, I want to make sure that I still remember the syntax.
+
+[Leo Irakliotis] 12:06:33
+But it works
+
+[Leo Irakliotis] 12:06:47
+Same mistake again.
+
+[Leo Irakliotis] 12:07:34
+the misspelling of principle, notice that the second print statement
+
+[Leo Irakliotis] 12:07:39
+Gives me something better formatted. I need to change the
+
+[Leo Irakliotis] 12:07:43
+This one here for a second in a minute.
+
+[Leo Irakliotis] 12:07:48
+But now I have the currency symbols, I have my thousand separators, this amount, the amount is properly displayed as currency, not with like a physical constant or something. And
+
+[Leo Irakliotis] 12:08:03
+And the print statement, I know that this would have been here 100 times
+
+[Leo Irakliotis] 12:08:15
+That is, let's try it one more time. And
+
+[Leo Irakliotis] 12:08:19
+Let's correct the spelling of principal
+
+[Leo Irakliotis] 12:08:29
+$1,000 at 0.9%
+
+[Leo Irakliotis] 12:08:36
+At 9% a year over 30 years
+
+[Leo Irakliotis] 12:08:40
+It gives me what? A principle of $1,000 at 9
+
+[Leo Irakliotis] 12:08:45
+So I was entering the raid as a normalized fraction. Here I'm getting the rate displayed the way you'd see that the bank, right? After 30 years yields 13,2067.68
+
+[Leo Irakliotis] 12:09:01
+So the appearance of the second print statement is a little bit more professional looking at what cost though, at the cost of trying to figure out what everything means in this second print statement
+
+[Leo Irakliotis] 12:09:17
+And we'll start with the letter F, which stands for
+
+[Leo Irakliotis] 12:09:22
+formatted string or fancy string
+
+[Leo Irakliotis] 12:09:26
+And what I have inside the quotes, the double quotes now is a mix of plain text
+
+[Leo Irakliotis] 12:09:36
+And
+
+[Leo Irakliotis] 12:09:39
+variable references in curly braces
+
+[Leo Irakliotis] 12:09:43
+So this means take whatever the value of this variable is, whatever we type for term and display it here or the value
+
+[Leo Irakliotis] 12:09:53
+Followed by formatting directly. So here I say, take the value of principal, $1,000, and display this as an integer number. That's what this stands. Don't ask me
+
+[Leo Irakliotis] 12:10:03
+Don't ask why D stands for integer
+
+[Leo Irakliotis] 12:10:08
+This is ancient history
+
+[Leo Irakliotis] 12:10:11
+In computer linguistics
+
+[Leo Irakliotis] 12:10:13
+And the comma before the D says, put the comma separators for 1000
+
+[Leo Irakliotis] 12:10:21
+Bad news, good news. Bad news is that the how to write statements like this to get you this visual, nice visual display is a royal pain because you have to remember, what do I use for integer
+
+[Leo Irakliotis] 12:10:36
+What do I use for float? What do I use for float with two decimal points?
+
+[Leo Irakliotis] 12:10:44
+Eventually, after years of
+
+[Leo Irakliotis] 12:10:47
+Continuous practice, you are going to memorize some basic syntax rules, but not everything. That's the bad news
+
+[Leo Irakliotis] 12:10:53
+The good news is that
+
+[Leo Irakliotis] 12:10:57
+At least for me, this is something that an AI tool can do very well. Say, you know, I want to have a formatted printing here
+
+[Leo Irakliotis] 12:11:06
+to look like this
+
+[Leo Irakliotis] 12:11:09
+And your AI assistant for programming
+
+[Leo Irakliotis] 12:11:12
+can step in and do that for you
+
+[Leo Irakliotis] 12:11:17
+Even so, I would say that the ability to write at some point, not right now, I mean, this is not something we're looking at for the next three, four weeks, but at some point by the end of the course, writing nice, fancy or formatted strings
+
+[Leo Irakliotis] 12:11:33
+is a good skill to have, no matter how easy this is done with with AI
+
+[Leo Irakliotis] 12:11:46
+This is a very simple program, very naive program that has quite a few things that we have discussed and we will be discussing in the course. It has variables, it has
+
+[Leo Irakliotis] 12:11:57
+three four variables principle, interest rate, term and total
+
+[Leo Irakliotis] 12:12:03
+The first three variables are user
+
+[Leo Irakliotis] 12:12:07
+obtain valuables. We ask the user to provide those variables, and the way the program is written right now, because of the input commands, we ask the user specifically to provide those values from the keyboard.
+
+[Leo Irakliotis] 12:12:24
+Then
+
+[Leo Irakliotis] 12:12:27
+In
+
+[Leo Irakliotis] 12:12:29
+The next variable, the fourth variable total is a computation. This is what Evan has been doing for us on his terminal. This is an there is a special term
+
+[Leo Irakliotis] 12:12:41
+for how we define this variable. The this variable is computed based and on an expression. An expression is an operation
+
+[Leo Irakliotis] 12:12:52
+So it involves variables
+
+[Leo Irakliotis] 12:12:55
+In mathematics and other functions here. What are we doing? We take the principle, we multiply it with interest rate erased. There is the function, the mathematical function, exponentiation, to how many years we're compounding
+
+[Leo Irakliotis] 12:13:09
+that interest. And once that computation is done, what is done on the right side of that assignment operator? I don't call it the equal sign, it looks to you like the equal sign, but in this context is the assignment operator.
+
+[Leo Irakliotis] 12:13:24
+We execute first what is on the right side of the assignment operator. That expression there results into a number like $17,000 or something. We take that value and then we assign it to the variable on the left side of the assignment operator
+
+[Leo Irakliotis] 12:13:42
+And then the rest of the program is print statements.
+
+[Leo Irakliotis] 12:13:46
+As programs go, this is naive, this is terrible. It's terrible because it does not differentiate between the logic, which is how do you compute the
+
+[Leo Irakliotis] 12:14:00
+amount
+
+[Leo Irakliotis] 12:14:01
+the total amount after so many years of investment at that rate
+
+[Leo Irakliotis] 12:14:06
+Versus how you obtain the data
+
+[Leo Irakliotis] 12:14:09
+To do that. So usually a program has two concerns
+
+[Leo Irakliotis] 12:14:14
+The logic concern, which is basically this line here
+
+[Leo Irakliotis] 12:14:19
+compute the money and the input output concern, which is how we obtain the input from the user and how we present the results to the user
+
+[Leo Irakliotis] 12:14:29
+So we have input
+
+[Leo Irakliotis] 12:14:32
+We have logic
+
+[Leo Irakliotis] 12:14:34
+We have output
+
+[Leo Irakliotis] 12:14:35
+At an introductory level like this, those three concerns, input, logic, output
+
+[Leo Irakliotis] 12:14:43
+are mixed in the same bag
+
+[Leo Irakliotis] 12:14:45
+which is the equivalent of going to a buffet and getting your appetizers, your main course, and your dessert in the same plate and eating them together
+
+[Leo Irakliotis] 12:14:57
+works great with 5-year-olds
+
+[Leo Irakliotis] 12:15:00
+Also
+
+[Leo Irakliotis] 12:15:00
+Two years ago, when I got COVID for the first time, and I lost my taste what great for me because I would do silly things at the department Christmas party where I'll put soy sauce on a Christmas cookie
+
+[Leo Irakliotis] 12:15:13
+or catch up on my ice cream and bet my colleagues, I can take ketchup and master on my ice cream. So, no, $20 says you cannot
+
+[Leo Irakliotis] 12:15:20
+I have collected about $250 at that party. But outside being silly and ridiculous and still an adolescent, the office party
+
+[Leo Irakliotis] 12:15:32
+the separation of concerns
+
+[Leo Irakliotis] 12:15:35
+Input, logic output is one of the most fundamental principles we're going to learn in programming. It's as fundamental as in natural language when you write a document, whether it's a book or a memo
+
+[Leo Irakliotis] 12:15:49
+You have a beginning, a middle, and an end.
+
+[Leo Irakliotis] 12:15:56
+But then again, if you are as good as David Foster Wallace
+
+[Leo Irakliotis] 12:16:01
+Those rules of proper writing go out the window, but how many of us can write like he did
+
+[Leo Irakliotis] 12:16:08
+But for the most of us, for most of our programs, we need to separate input-output and logic concerns, and over the course, we are going to do to see how to do that beginning tomorrow, we're going to keep working on this program
+
+[Leo Irakliotis] 12:16:24
+and make it a little bit more robust to demonstrate those separations of concerns and keep talking about the tools we are using. I'm going to pause this program on GitHub
+
+[Leo Irakliotis] 12:16:35
+When we're done today, I'm trying something else, and I'm I'm very
+
+[Leo Irakliotis] 12:16:44
+I'm both excited and and troubled by it, so
+
+[Leo Irakliotis] 12:16:49
+I have Zoom recording the conversation, not recording the meeting, but doing a transcript
+
+[Leo Irakliotis] 12:16:55
+And it's doing a great job even with my accent.
+
+[Leo Irakliotis] 12:16:57
+And what I do at the end of the course, I give that transcript to Claude and say, hey, can you write a summary of what we discussed in class?
+
+[Leo Irakliotis] 12:17:06
+So I love how these models work. I'm terrified at what they're doing for our future and whether any of us will have a job three years or four years down the road
+
+[Leo Irakliotis] 12:17:17
+So, I'm kind of, you know.
+
+[Leo Irakliotis] 12:17:23
+conflicted
+
+[Leo Irakliotis] 12:17:25
+Take advantage of the technology and see if providing you with a summary of what we discussed is helpful, but also I'm participating in the use of a technology that
+
+[Leo Irakliotis] 12:17:38
+Again, might make the movies The Matrix look like a Sunday morning children's show.
+
+[Leo Irakliotis] 12:17:43
+So
+
+[Leo Irakliotis] 12:17:45
+You tell me
+
+[Leo Irakliotis] 12:17:47
+how much of this infernal technology you want me to use for the course, and I will play along. But
+
+[Leo Irakliotis] 12:17:54
+Seeing what happened last week and last couple of weeks at commencements across the country where speakers said, hey, you know, AI, and they got booed
+
+[Leo Irakliotis] 12:18:03
+I'm becoming more and more sensitive to about
+
+[Leo Irakliotis] 12:18:07
+what this technology can do to you than to me, because, you know, at 58, you start beginning to look at the
+
+[Leo Irakliotis] 12:18:16
+tail end of my career and well, you're on the other side of the curve. You're beginning at the front curve of your career. So
+
+[Leo Irakliotis] 12:18:24
+I'll take your feedback and I'll take my marching orders from you. But to the extent you want to see this thing, how it works, I'll use a little bit. If you say, you know what
+
+[Leo Irakliotis] 12:18:37
+Let's go back to a plain vanilla tools. I'm good for that as well. You tell me what you need.
+
+[Leo Irakliotis] 12:18:44
+See you tomorrow, same time, same place, unless you have any questions.
+
+[Bella Fiorucci] 12:18:51
+Um, question really quick. On the GitHub, it showed last week there was, like, the week one recap that had all of the different, like, commands and stuff, but whenever I looked this morning, it wasn't up still.
+
+[Leo Irakliotis] 12:18:52
+All right, Brian. Yeah.
+
+[Bella Fiorucci] 12:19:04
+Are those going to be, like, taken down every week? Was that an accident, or…?
+
+[Leo Irakliotis] 12:19:11
+User error.
+
+[Bella Fiorucci] 12:19:12
+Okay, sorry, I just wanted to make sure.
+
+[Leo Irakliotis] 12:19:15
+I was trying to fix this before we started, but I need to do 5 minutes, everything will be back up, and I'll send you an email when everything is ready.
+
+[Bella Fiorucci] 12:19:22
+Okay, perfect, thank you so much.
+
+[Leo Irakliotis] 12:19:25
+Sorry about that. Thanks, Bella.
+
+[Leo Irakliotis] 12:19:28
+All right, Ivran, anything else?
+
+[Leo Irakliotis] 12:19:32
+See you tomorrow.
+
+[Rebecca Dickman] 12:19:33
+Thank
+
+[Kandace Garcia] 12:19:36
+Thank you.
+
+[Leo Irakliotis] 12:19:37
+Bye-bye.
+
