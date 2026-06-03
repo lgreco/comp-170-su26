@@ -201,7 +201,7 @@ Look at the pattern row by row:
 | 4       | 1             | 4     |
 | 5       | 0             | 5     |
 
-Notice: when `N = 5` and the row is `i`, the number of leading spaces is `N - i`.
+Notice: when $N = 5$ and the row is $i$, the number of leading spaces is $N - i$.
 
 **Your task:**
 
@@ -235,27 +235,23 @@ The target output looks like this (for a radius of 8):
 
 A circle centered at the origin satisfies the equation:
 
-```
-x² + y² = r²
-```
+$$x^2 + y^2 = r^2$$
 
-Any point where `x² + y² ≤ r²` is *inside* the circle. To draw a filled circle, you scan row by row (each row is one value of `y`). For a given `y`, the rightmost `x` that still falls inside the circle is:
+Any point where $x^2 + y^2 \leq r^2$ is *inside* the circle. To draw a filled circle, you scan row by row (each row is one value of $y$). For a given $y$, the rightmost $x$ that still falls inside the circle is:
 
-```
-x_max = sqrt(r² - y²)
-```
+$$x_{\max} = \sqrt{r^2 - y^2}$$
 
-Each row then prints `2 * x_max + 1` stars (from `-x_max` to `+x_max`), centered with leading spaces.
+Each row then prints $2x_{\max} + 1$ stars (from $-x_{\max}$ to $+x_{\max}$), centered with leading spaces.
 
 #### Discretization
 
-The terminal is a grid of characters — you can only place a character at an integer position, not at `x = 3.7`. So you round `x_max` to the nearest integer with `int(x_max + 0.5)`. This is called **discretization**: mapping a continuous shape onto a discrete grid. The result is an approximation; the edges will look slightly stepped rather than smooth.
+The terminal is a grid of characters — you can only place a character at an integer position, not at $x = 3.7$. So you round $x_{\max}$ to the nearest integer with `int(x_max + 0.5)`. This is called **discretization**: mapping a continuous shape onto a discrete grid. The result is an approximation; the edges will look slightly stepped rather than smooth.
 
 #### Aspect Ratio
 
-Terminal characters are roughly **twice as tall as they are wide**. If you loop `y` from `-r` to `r` (that's `2r + 1` rows) and each row is `2r + 1` characters wide, the shape will look like a tall oval, not a circle.
+Terminal characters are roughly **twice as tall as they are wide**. If you loop $y$ from $-r$ to $r$ (that's $2r + 1$ rows) and each row is $2r + 1$ characters wide, the shape will look like a tall oval, not a circle.
 
-To compensate, loop `y` over a compressed range — from `-r//2` to `r//2` — and then scale each `y` back up by 2 before applying the formula. This halves the number of rows while keeping the width the same, making the character grid approximately square.
+To compensate, loop $y$ over a compressed range — from `-r//2` to `r//2` — and then scale each $y$ back up by 2 before applying the formula. This halves the number of rows while keeping the width the same, making the character grid approximately square.
 
 #### A New Tool: `import math`
 

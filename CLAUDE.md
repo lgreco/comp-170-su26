@@ -82,3 +82,15 @@ Resources assigned or referenced across the course. Use this table when adding r
 ## Code Style
 
 Student-facing example code is intentionally simple and beginner-readable. Type annotations are used on function signatures (see `quad.py`) but internal implementation stays plain. `if __name__ == "__main__":` guards are used in runnable examples to separate reusable logic from demo invocations.
+
+## Math Formatting
+
+All mathematical expressions in course documents must be written in LaTeX, consistent with the existing lecture files. Use `$...$` for inline math and `$$...$$` for display (block) math.
+
+| Context | Format | Example |
+|---------|--------|---------|
+| Variable or value in prose | Inline: `$...$` | "the number of spaces is $N - i$" |
+| Equation worth its own line | Display: `$$...$$` | $$x^2 + y^2 = r^2$$ |
+| Python code or expression | Backtick code: `` `...` `` | "call `range(1, N+1)`" |
+
+**Key rule:** if it is a mathematical object (variable, formula, inequality, equation), use LaTeX. If it is Python syntax or a terminal command, use a code span or code block. Never use Unicode math characters (², ≤, √, →) in place of LaTeX.
