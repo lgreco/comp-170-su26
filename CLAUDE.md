@@ -66,7 +66,7 @@ Resources assigned or referenced across the course. Use this table when adding r
 | Resource | Type | URL | First assigned | Coverage |
 |----------|------|-----|----------------|----------|
 | *Introducing Python, 3rd Ed.* — Ch. 1: Introduction | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ | week03 assignment | What Python is, the interpreter, running a first program |
-| *Introducing Python, 3rd Ed.* — Ch. 2: Types and Variables | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ | week03 assignment | Data types, variables, how values are stored and named |
+| *Introducing Python, 3rd Ed.* — Ch. 2: Types and Variables | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch02.html#id642 | week03 assignment | Data types, variables, how values are stored and named |
 | *Introducing Python, 3rd Ed.* — Ch. 3: Numbers | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch03.html | week03 assignment | Integers, floats, arithmetic |
 | *Introducing Python, 3rd Ed.* — Ch. 4: Strings | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch04.html | week03 assignment | String creation, `+`, `*`, indexing, slicing |
 | *Introducing Python, 3rd Ed.* — Ch. 7: For and While | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch07.html | week03 assignment | `for` loops (first half only assigned); `while` loops deferred |

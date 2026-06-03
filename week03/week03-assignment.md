@@ -40,7 +40,7 @@ We built intuition for **loops** and **scope**: every indented line under a `for
 Before working through the problems, read the following from **Introducing Python, 3rd Edition** (Bill Lubanovic) on O'Reilly Learning:
 
 - [**Chapter 1 — Introduction**](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/) — what Python is, how the interpreter works, and how to run your first program.
-- **Chapter 2 — Types and Variables** — Python's data types, how variables work, and how values are stored and named.
+- [**Chapter 2 — Types and Variables**](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch02.html#id642) — Python's data types, how variables work, and how values are stored and named.
 - [**Chapter 3 — Numbers**](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch03.html) — integers, floats, and arithmetic. Short but worth reading carefully before moving to strings.
 - [**Chapter 4 — Strings**](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch04.html) — everything about text in Python: creating strings, concatenation, the `*` repetition operator, indexing, and slicing. This chapter maps directly onto Problems 1 through 3 below.
 - [**Chapter 7 — For and While, first half (the `for` section only)**](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch07.html) — read up to and including the `for` loop material; stop when the `while` loop section begins. This connects directly to Problems 2 and 3.
