@@ -31,7 +31,7 @@ Content is organized by week:
 |------|-------|--------|
 | `week01/` | `week01-review.md` | Week 1 review notes |
 | `week02/` | `week02-review.md`, `2026-05-26-COMP170.md`, `2026-05-27-COMP170.md`, `interest.py`, `interest_pro.py` | Terminal basics, compound interest program, separation of concerns (input / logic / output) |
-| `week03/` | `2026-06-01-COMP170.md`, `ascii.py`, `hello.py`, `demo_scope.py`, `week03-assignment.md` | ASCII character codes, `ord()`/`chr()`, strings, string repetition operator, drawing shapes with loops; `demo_scope.py` is a `range()` / indentation demo used in class |
+| `week03/` | `2026-06-01-COMP170.md`, `2026-06-03-COMP170.md`, `ascii.py`, `hello.py`, `demo_scope.py`, `week03-assignment.md` | ASCII character codes, `ord()`/`chr()`, strings, string repetition operator, `int()` conversion, positional number systems (decimal/binary/hex), drawing shapes with loops, scope and indentation; `demo_scope.py` is a `range()` / indentation demo used in class |
 | `tools/` | `vim_tutorial.md` | Vim reference |
 
 ### Tutorial file naming convention

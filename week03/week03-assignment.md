@@ -3,6 +3,38 @@
 
 ---
 
+## Week 3 at a Glance
+
+Here is a concise summary of what we covered in class this week, followed by reading pointers for each topic. If anything felt unclear in lecture, start here before opening the textbook.
+
+### June 1 — ASCII, Strings, and the `*` Operator
+
+Every character your computer displays has a number behind it. **ASCII** ties characters to integers: `ord('A')` is 65, `ord('a')` is 97, `ord('0')` is 48, and the space character is 32. Python's `ord()` and `chr()` functions let you move between characters and codes in both directions. The gap of exactly 32 between uppercase and lowercase is a useful shortcut: `chr(ord('A') + 32)` gives you `'a'`.
+
+We then looked at **strings** — sequences of characters — and the `*` operator, which *repeats* a string rather than performing arithmetic: `'ha' * 3` gives `'hahaha'`, not a number. We used string repetition to draw shapes with a `for` loop, replacing seven separate `print` statements with four lines that capture the pattern for any $N$.
+
+### June 2–3 — Number Systems, Loops, and Scope
+
+Bella's question about `"22" * 3` sharpened a key distinction: the result is `"222222"`, not `66`, because `*` on a string repeats text. To do arithmetic with a number stored as text, convert it first with `int()`.
+
+We then traced how **positional number systems** work. In decimal (base 10), each position is a power of 10: $2026 = 2 \times 1000 + 0 \times 100 + 2 \times 10 + 6 \times 1$. Binary (base 2) follows the same logic using only 0 and 1. Hexadecimal (base 16) compresses four binary digits into one symbol (0–9, then A–F). We also saw why uppercase ASCII codes are *lower* than lowercase — uppercase letters were encoded first, when memory was scarce; lowercase came later.
+
+We built intuition for **loops** and **scope**: every indented line under a `for` statement runs once per iteration; moving a line back to the left margin puts it after the loop. `range()` starts at 0 by default, stops *before* the end value, and advances by 1 — so `range(5)` gives 0, 1, 2, 3, 4. Zero-based counting reflects position in a line: you are labeled 0 because zero people are ahead of you.
+
+### Reading for This Week's Topics
+
+| Topic | Where to read |
+|-------|---------------|
+| ASCII, `ord()`, `chr()` | [docs.python.org — `ord`](https://docs.python.org/3/library/functions.html#ord) · [docs.python.org — `chr`](https://docs.python.org/3/library/functions.html#chr) · *Introducing Python* Ch. 4 |
+| Strings, `+`, `*` operator | [docs.python.org — Text](https://docs.python.org/3/tutorial/introduction.html#text) · *Introducing Python* Ch. 4 |
+| Converting text to numbers with `int()` | [docs.python.org — `int`](https://docs.python.org/3/library/functions.html#int) · *Introducing Python* Ch. 3 |
+| Binary and hexadecimal number systems | [docs.python.org — Numeric Literals](https://docs.python.org/3/reference/lexical_analysis.html#integer-literals) · *Introducing Python* Ch. 3 |
+| `for` loops | [docs.python.org — for Statements](https://docs.python.org/3/tutorial/controlflow.html#for-statements) · *Introducing Python* Ch. 7 |
+| `range()` and zero-based counting | [docs.python.org — The range() Function](https://docs.python.org/3/tutorial/controlflow.html#the-range-function) · *Introducing Python* Ch. 7 |
+| Scope and indentation | [docs.python.org — Compound Statements](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement) · *Introducing Python* Ch. 7 |
+
+---
+
 ## Assigned Reading
 
 Before working through the problems, read the following from **Introducing Python, 3rd Edition** (Bill Lubanovic) on O'Reilly Learning:
