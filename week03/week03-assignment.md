@@ -25,13 +25,13 @@ We built intuition for **loops** and **scope**: every indented line under a `for
 
 | Topic | Where to read |
 |-------|---------------|
-| ASCII, `ord()`, `chr()` | [docs.python.org — `ord`](https://docs.python.org/3/library/functions.html#ord) · [docs.python.org — `chr`](https://docs.python.org/3/library/functions.html#chr) · *Introducing Python* Ch. 4 |
-| Strings, `+`, `*` operator | [docs.python.org — Text](https://docs.python.org/3/tutorial/introduction.html#text) · *Introducing Python* Ch. 4 |
-| Converting text to numbers with `int()` | [docs.python.org — `int`](https://docs.python.org/3/library/functions.html#int) · *Introducing Python* Ch. 3 |
-| Binary and hexadecimal number systems | [docs.python.org — Numeric Literals](https://docs.python.org/3/reference/lexical_analysis.html#integer-literals) · *Introducing Python* Ch. 3 |
-| `for` loops | [docs.python.org — for Statements](https://docs.python.org/3/tutorial/controlflow.html#for-statements) · *Introducing Python* Ch. 7 |
-| `range()` and zero-based counting | [docs.python.org — The range() Function](https://docs.python.org/3/tutorial/controlflow.html#the-range-function) · *Introducing Python* Ch. 7 |
-| Scope and indentation | [docs.python.org — Compound Statements](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement) · *Introducing Python* Ch. 7 |
+| ASCII, `ord()`, `chr()` | [docs.python.org — `ord`](https://docs.python.org/3/library/functions.html#ord) · [docs.python.org — `chr`](https://docs.python.org/3/library/functions.html#chr) · [*Introducing Python* Ch. 4](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch04.html) |
+| Strings, `+`, `*` operator | [docs.python.org — Text](https://docs.python.org/3/tutorial/introduction.html#text) · [*Introducing Python* Ch. 4](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch04.html) |
+| Converting text to numbers with `int()` | [docs.python.org — `int`](https://docs.python.org/3/library/functions.html#int) · [*Introducing Python* Ch. 3](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch03.html) |
+| Binary and hexadecimal number systems | [docs.python.org — Numeric Literals](https://docs.python.org/3/reference/lexical_analysis.html#integer-literals) · [*Introducing Python* Ch. 3](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch03.html) |
+| `for` loops | [docs.python.org — for Statements](https://docs.python.org/3/tutorial/controlflow.html#for-statements) · [*Introducing Python* Ch. 7](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch07.html) |
+| `range()` and zero-based counting | [docs.python.org — The range() Function](https://docs.python.org/3/tutorial/controlflow.html#the-range-function) · [*Introducing Python* Ch. 7](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch07.html) |
+| Scope and indentation | [docs.python.org — Compound Statements](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement) · [*Introducing Python* Ch. 7](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch07.html) |
 
 ---
 
@@ -41,9 +41,9 @@ Before working through the problems, read the following from **Introducing Pytho
 
 - [**Chapter 1 — Introduction**](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/) — what Python is, how the interpreter works, and how to run your first program.
 - **Chapter 2 — Types and Variables** — Python's data types, how variables work, and how values are stored and named.
-- **Chapter 3 — Numbers** — integers, floats, and arithmetic. Short but worth reading carefully before moving to strings.
-- **Chapter 4 — Strings** — everything about text in Python: creating strings, concatenation, the `*` repetition operator, indexing, and slicing. This chapter maps directly onto Problems 1 through 3 below.
-- **Chapter 7 — For and While, first half (the `for` section only)** — read up to and including the `for` loop material; stop when the `while` loop section begins. This connects directly to Problems 2 and 3.
+- [**Chapter 3 — Numbers**](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch03.html) — integers, floats, and arithmetic. Short but worth reading carefully before moving to strings.
+- [**Chapter 4 — Strings**](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch04.html) — everything about text in Python: creating strings, concatenation, the `*` repetition operator, indexing, and slicing. This chapter maps directly onto Problems 1 through 3 below.
+- [**Chapter 7 — For and While, first half (the `for` section only)**](https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch07.html) — read up to and including the `for` loop material; stop when the `while` loop section begins. This connects directly to Problems 2 and 3.
 
 Access requires an O'Reilly account. You have one! Use your LUC email to login.
 
