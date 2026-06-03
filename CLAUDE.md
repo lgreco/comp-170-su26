@@ -59,6 +59,30 @@ Dated tutorial files follow the pattern `YYYY-MM-DD-COMP170.md` and live inside 
 
 > **Note:** `week03/shopping.md` is a personal shopping list accidentally committed to the repo — it is not course material and should be ignored when generating student-facing content.
 
+## Assignment Submission Instructions
+
+Every assignment must end with a **"How to Submit"** section (after the Quick Reference). Use this template, substituting the correct week number:
+
+```markdown
+## How to Submit
+
+Upload your work on **Sakai** under the assignment for **Week NN**.
+
+Submit only your Python files:
+
+\```
+problem1.py
+problem2.py
+...
+\```
+
+No screenshots, no PDFs, no other file types — Python files only. Confirm with `ls` that each file exists before you upload.
+```
+
+- The Sakai assignment name matches the week the assignment was created (e.g., Week 03, Week 04).
+- List only the `.py` files students are expected to submit.
+- Do not mention any other submission method.
+
 ## Reading Materials
 
 Resources assigned or referenced across the course. Use this table when adding reading links to new assignments so that descriptions stay consistent and URLs are not duplicated.

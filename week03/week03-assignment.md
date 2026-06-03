@@ -382,3 +382,20 @@ u              undo last change (in Normal mode)
 for i in range(1, N+1):   # loop from 1 to N inclusive
     print('*' * i)         # use i inside the loop
 ```
+
+---
+
+## How to Submit
+
+Upload your work on **Sakai** under the assignment for **Week 03**.
+
+Submit only your Python files:
+
+```
+problem1.py
+problem2.py
+problem3.py
+problem4.py
+```
+
+No screenshots, no PDFs, no other file types — Python files only. Confirm with `ls` that each file exists before you upload.
