@@ -31,7 +31,7 @@ Content is organized by week:
 |------|-------|--------|
 | `week01/` | `week01-review.md` | Week 1 review notes |
 | `week02/` | `week02-review.md`, `2026-05-26-COMP170.md`, `2026-05-27-COMP170.md`, `interest.py`, `interest_pro.py` | Terminal basics, compound interest program, separation of concerns (input / logic / output) |
-| `week03/` | `2026-06-01-COMP170.md`, `2026-06-03-COMP170.md`, `ascii.py`, `hello.py`, `demo_scope.py`, `week03-assignment.md` | ASCII character codes, `ord()`/`chr()`, strings, string repetition operator, `int()` conversion, positional number systems (decimal/binary/hex), drawing shapes with loops, scope and indentation; `demo_scope.py` is a `range()` / indentation demo used in class |
+| `week03/` | `2026-06-01-COMP170.md`, `2026-06-03-COMP170.md`, `ascii.py`, `hello.py`, `demo_scope.py`, `week03-assignment.md`, `week03_solutions.py` | ASCII character codes, `ord()`/`chr()`, strings, string repetition operator, `int()` conversion, positional number systems (decimal/binary/hex), drawing shapes with loops, scope and indentation; `demo_scope.py` is a `range()` / indentation demo used in class; `week03_solutions.py` contains posted solutions for all four assignment problems |
 | `tools/` | `vim_tutorial.md` | Vim reference |
 
 ### Tutorial file naming convention
@@ -56,6 +56,13 @@ Dated tutorial files follow the pattern `YYYY-MM-DD-COMP170.md` and live inside 
 - Problem 2: staircase drawing with a `for` loop and `range()`; students write pseudocode first
 - Problem 3: right-aligned triangle using `' ' * (N-i) + '*' * i` per row
 - Problem 4 *(challenge)*: filled circle using `import math` and `math.sqrt()`; covers discretization and terminal aspect ratio
+
+### `week03/week03_solutions.py` content outline
+
+- Problem 1: all eight `print` expressions with predicted output as inline comments; written answers to the three reflection questions (commutativity of `*`, operator precedence of `*` vs `+`, `'*' * 0` as empty string)
+- Problem 2: pseudocode retained as comments; explanation of why `range(1, N+1)` is used instead of `range(N)`; staircase loop for `N = 5`
+- Problem 3: row-by-row table (spaces = `N-i`, stars = `i`) as a comment; right-aligned triangle loop for `N = 5` using `' ' * (N-i) + '*' * i`
+- Problem 4: three comment blocks explaining the circle equation ($x^2 + y^2 = r^2$), discretization (`int(x_max + 0.5)`), and aspect-ratio compression; complete circle loop for `r = 8`
 
 > **Note:** `week03/shopping.md` is a personal shopping list accidentally committed to the repo — it is not course material and should be ignored when generating student-facing content.
 
@@ -105,7 +112,8 @@ Resources assigned or referenced across the course. Use this table when adding r
 | *Introducing Python, 3rd Ed.* — Ch. 2: Types and Variables | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch02.html#id642 | week03 assignment | Data types, variables, how values are stored and named |
 | *Introducing Python, 3rd Ed.* — Ch. 3: Numbers | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch03.html | week03 assignment | Integers, floats, arithmetic |
 | *Introducing Python, 3rd Ed.* — Ch. 4: Strings | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch04.html | week03 assignment | String creation, `+`, `*`, indexing, slicing |
-| *Introducing Python, 3rd Ed.* — Ch. 7: For and While | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch07.html | week03 assignment | `for` loops (first half only assigned); `while` loops deferred |
+| *Introducing Python, 3rd Ed.* — Ch. 7: Loops | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch07.html | week03 assignment | `for` loops (first half only assigned); `while` loops deferred |
+| *Introducing Python, 3rd Ed.* — Ch. 8: Lists | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch08.html#c08_h_list_create | week04 assignment | Creating and working with lists; indexing, slicing, mutating |
 | docs.python.org — An Informal Introduction: Text | Official docs | https://docs.python.org/3/tutorial/introduction.html#text | week03 assignment | Strings, `+`, `*`, indexing, slicing |
 | docs.python.org — for Statements | Official docs | https://docs.python.org/3/tutorial/controlflow.html#for-statements | week03 assignment | `for` loop syntax and iteration over sequences |
 | docs.python.org — The range() Function | Official docs | https://docs.python.org/3/tutorial/controlflow.html#the-range-function | week03 assignment | `range()` patterns for numeric loops |
