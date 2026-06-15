@@ -2,7 +2,7 @@
 # number of characters, converting each qualifying word to uppercase.
 #
 # In class we worked with the sentence below and a cutoff of 4 characters.
-# With Bella's help we identified the qualifying words by hand first:
+# We identified the qualifying words by hand first:
 # relentless, summer, Chicago, sidewalks, shimmer — then wrote code to do it.
 #
 # The program demonstrates three ideas working together:
