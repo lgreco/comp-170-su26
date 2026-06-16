@@ -24,14 +24,17 @@ N = 4
 # Start with an empty list; we will fill it one word at a time inside the loop.
 output_list = []
 
-# range(len(words)) produces the indices 0, 1, 2, … len(words)-1,
-# so words[i] visits every word in order.
+# This is an enhanced for-loop (also called a for-each loop): instead of
+# looping over indices, it loops directly over the elements of the list.
+# Each time through, word is bound to the next item in words, in order —
+# first word = 'The', then word = 'relentless', and so on — with no index
+# variable and no need to write words[i] anywhere in the loop body.
 for word in words:
-    # len(words[i]) counts the characters in the current word.
+    # len(word) counts the characters in the current word.
     # The condition is *strictly greater than* N, so a 4-letter word is excluded.
     if len(word) > N:
         # upper() returns a new string with every letter capitalised;
-        # it does not modify words[i] itself.
+        # it does not modify word itself.
         # append() adds that new string to the end of output_list.
         output_list.append(word.upper())
 
