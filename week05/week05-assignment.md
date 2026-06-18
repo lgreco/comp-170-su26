@@ -131,6 +131,8 @@ $ ls                     <- confirm you are in the right folder
 
 ## The Problems
 
+This assignment may feel a bit disconnected from what we covered in class this week. This is intentional. It is meant to demonstrate that programming skills can also develop with self-study and self-direction.
+
 Before starting, read [**docs.python.org -- String Methods**](https://docs.python.org/3/library/stdtypes.html#string-methods). It lists every built-in method a string has. Problems 1 through 4 each focus on a handful of those methods — what they do, why they exist, and a few concrete tasks to try with them.
 
 ---
