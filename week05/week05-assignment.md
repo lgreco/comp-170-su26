@@ -1,7 +1,4 @@
 # COMP 170 — Week 5 Assignment
-*Functions: Packaging Logic for Reuse*
-
----
 
 ## Week at a Glance
 
