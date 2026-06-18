@@ -147,14 +147,15 @@ Create a file called `problem1.py`. Use this sentence for all five tasks:
 sentence = "the quick brown fox jumps over the lazy dog the fox ran"
 ```
 
-1. Use `.find()` to locate the **first** occurrence of `"fox"`. Print the index.
-2. Use `.rfind()` to locate the **last** occurrence of `"fox"`. Print the index, and compare it to the result of task 1 — are they the same number or different? Write one sentence explaining why.
+1. Use `.find()` to locate the **first** occurrence of `"fox"`. Print the result.
+2. Use `.rfind()` to locate the **last** occurrence of `"fox"`. Print the result, and compare it to the result of task 1 — are they the same number or different? Write one sentence explaining why.
 3. Use `.find()` to search for a word that is **not** in the sentence, such as `"elephant"`. Print the result — notice that it does not crash.
 4. Use `.index()` to search for that same missing word, `"elephant"`. Run it and read the error Python gives you. Then, in a comment, explain in your own words how `.index()` behaves differently from `.find()` when a search fails.
 5. Use `.rindex()` to find the position of the **last** occurrence of `"the"`.
 
-**Why this matters:** `.find()` returns `-1` on failure, so it's safe to use inside an `if` check (`if sentence.find(word) != -1:`) without crashing your program — this is the same defensive instinct behind the input validation in [`managing_complexity.py`](./managing_complexity.py). `.index()` raises an error instead, which is useful when a missing substring really should stop the program rather than be silently ignored. `.rfind()` / `.rindex()` matter whenever the *last* match is the one you actually want — for example, finding a file's extension by locating the last `.` in its name, since a filename can contain other dots earlier on.
+**Why this matters:** `.find()` returns `-1` on failure, so it's safe to use inside an `if` check (`if sentence.find(word) != -1:`) without crashing your program — this is the same defensive instinct behind the input validation in [`managing_complexity.py`](./managing_complexity.py). 
 
+`.index()` on the other hand, raises an error when it fails to find its target work.
 ---
 
 ### Problem 2 -- Counting and Classifying
