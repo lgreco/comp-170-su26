@@ -32,6 +32,8 @@ Content is organized by week:
 | `week01/` | `week01-review.md` | Week 1 review notes |
 | `week02/` | `week02-review.md`, `2026-05-26-COMP170.md`, `2026-05-27-COMP170.md`, `interest.py`, `interest_pro.py` | Terminal basics, compound interest program, separation of concerns (input / logic / output) |
 | `week03/` | `2026-06-01-COMP170.md`, `2026-06-03-COMP170.md`, `ascii.py`, `hello.py`, `demo_scope.py`, `week03-assignment.md`, `week03_solutions.py` | ASCII character codes, `ord()`/`chr()`, strings, string repetition operator, `int()` conversion, positional number systems (decimal/binary/hex), drawing shapes with loops, scope and indentation; `demo_scope.py` is a `range()` / indentation demo used in class; `week03_solutions.py` contains posted solutions for all four assignment problems |
+| `week04/` | `2026-06-08-COMP170.md`, `2026-06-09-COMP170.md`, `2026-06-10-COMP170.md`, `airline.py`, `seat_arrangements.py`, `temperatures.py`, `claude_demo.md`, `week04-assignment.md` | Booleans, `and`/`or`, `==` vs. `=`, the modulo operator, the airplane seating problem (`%` and `//`), lists (creation, zero-based indexing, `len()`), the cumulative algorithm (running sum/average) |
+| `week05/` | `2026-06-15-COMP170.md`, `2026-06-16-COMP170.md`, `2026-06-17-COMP170.md`, `play_with_words.py`, `fun_with_words.py`, `managing_complexity.py`, `that_other_program.py`, `week05-assignment.md` | `sentence.split()`, plain vs. enhanced `for` loops, packaging logic into a function with type hints/docstrings/input validation (`managing_complexity.py`), running a function via `if __name__ == "__main__":` vs. importing it from another file (`that_other_program.py`) |
 | `tools/` | `vim_tutorial.md` | Vim reference |
 
 ### Tutorial file naming convention
@@ -114,9 +116,11 @@ Resources assigned or referenced across the course. Use this table when adding r
 | *Introducing Python, 3rd Ed.* — Ch. 4: Strings | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch04.html | week03 assignment | String creation, `+`, `*`, indexing, slicing |
 | *Introducing Python, 3rd Ed.* — Ch. 7: Loops | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch07.html | week03 assignment | `for` loops (first half only assigned); `while` loops deferred |
 | *Introducing Python, 3rd Ed.* — Ch. 8: Lists | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch08.html#c08_h_list_create | week04 assignment | Creating and working with lists; indexing, slicing, mutating |
+| *Introducing Python, 3rd Ed.* — Ch. 10: Functions | Textbook (O'Reilly) | https://learning.oreilly.com/library/view/introducing-python-3rd/9781098174392/ch10.html | week05 assignment | Defining functions with `def`, parameters/arguments, `return`, default parameter values, docstrings (chapter also covers closures, decorators, generators, recursion — not assigned yet) |
 | docs.python.org — An Informal Introduction: Text | Official docs | https://docs.python.org/3/tutorial/introduction.html#text | week03 assignment | Strings, `+`, `*`, indexing, slicing |
 | docs.python.org — for Statements | Official docs | https://docs.python.org/3/tutorial/controlflow.html#for-statements | week03 assignment | `for` loop syntax and iteration over sequences |
 | docs.python.org — The range() Function | Official docs | https://docs.python.org/3/tutorial/controlflow.html#the-range-function | week03 assignment | `range()` patterns for numeric loops |
+| docs.python.org — Defining Functions | Official docs | https://docs.python.org/3/tutorial/controlflow.html#defining-functions | week05 assignment | `def` syntax, default argument values, docstrings |
 | Bash cheat sheet | Reference | https://devhints.io/bash | week03 assignment | Common shell commands, shortcuts, syntax |
 | Vim cheat sheet | Reference | https://vim.rtorr.com | week03 assignment | All vim modes, motion, editing, and save/quit commands |
 | Vim tutorial (course repo) | In-repo reference | `tools/vim_tutorial.md` | week01 review | Modes, essential commands, workflow for this course |
