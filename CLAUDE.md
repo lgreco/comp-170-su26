@@ -34,6 +34,7 @@ Content is organized by week:
 | `week03/` | `2026-06-01-COMP170.md`, `2026-06-03-COMP170.md`, `ascii.py`, `hello.py`, `demo_scope.py`, `week03-assignment.md`, `week03_solutions.py` | ASCII character codes, `ord()`/`chr()`, strings, string repetition operator, `int()` conversion, positional number systems (decimal/binary/hex), drawing shapes with loops, scope and indentation; `demo_scope.py` is a `range()` / indentation demo used in class; `week03_solutions.py` contains posted solutions for all four assignment problems |
 | `week04/` | `2026-06-08-COMP170.md`, `2026-06-09-COMP170.md`, `2026-06-10-COMP170.md`, `airline.py`, `seat_arrangements.py`, `temperatures.py`, `claude_demo.md`, `week04-assignment.md` | Booleans, `and`/`or`, `==` vs. `=`, the modulo operator, the airplane seating problem (`%` and `//`), lists (creation, zero-based indexing, `len()`), the cumulative algorithm (running sum/average) |
 | `week05/` | `2026-06-15-COMP170.md`, `2026-06-16-COMP170.md`, `2026-06-17-COMP170.md`, `play_with_words.py`, `fun_with_words.py`, `managing_complexity.py`, `that_other_program.py`, `week05-assignment.md` | `sentence.split()`, plain vs. enhanced `for` loops, packaging logic into a function with type hints/docstrings/input validation (`managing_complexity.py`), running a function via `if __name__ == "__main__":` vs. importing it from another file (`that_other_program.py`) |
+| `week06/` | `2026-06-22-COMP170.md`, `2026-06-23-COMP170.md`, `2026-06-24-COMP170.md`, `cumulative.py`, `fact.py`, `parse_brute_force.py`, `week06-assignment.md` | Loop variable naming, accumulator pattern (running sum/product), factorials and first look at recursion, reinventing `str.split()` character by character (`parse_brute_force.py`), debugging consecutive-delimiter bug, function headers (type hints, default parameters); assignment asks students to write pseudocode for `str.find()`, `str.upper()`, and `str.isalpha()` analogues |
 | `tools/` | `vim_tutorial.md` | Vim reference |
 
 ### Tutorial file naming convention
@@ -65,6 +66,16 @@ Dated tutorial files follow the pattern `YYYY-MM-DD-COMP170.md` and live inside 
 - Problem 2: pseudocode retained as comments; explanation of why `range(1, N+1)` is used instead of `range(N)`; staircase loop for `N = 5`
 - Problem 3: row-by-row table (spaces = `N-i`, stars = `i`) as a comment; right-aligned triangle loop for `N = 5` using `' ' * (N-i) + '*' * i`
 - Problem 4: three comment blocks explaining the circle equation ($x^2 + y^2 = r^2$), discretization (`int(x_max + 0.5)`), and aspect-ratio compression; complete circle loop for `r = 8`
+
+### `week06/week06-assignment.md` content outline
+
+- Assigned reading: *Introducing Python, 3rd Ed.* Chapter 10 (Functions) — second assignment; focus this week is on using function vocabulary (inputs, outputs, def line) to write pseudocode
+- Week at a Glance covering June 22–24: accumulator pattern, factorials/recursion, reinventing `split`, debugging, function headers
+- Introduction to pseudocode: the squared-paper/grid mental model; worked example (counting spaces in a string)
+- Problem 1: pseudocode for finding the first occurrence of a character — mirrors `str.find()`; example "Chicago" / 'i' → position $2$
+- Problem 2: pseudocode for converting a string to uppercase — mirrors `str.upper()`; hint uses ASCII gap of $32$ between `'a'` ($97$) and `'A'` ($65$)
+- Problem 3: pseudocode for deciding if a string is a word (letters only) — mirrors `str.isalpha()`; table distinguishes `"HELL0"` (zero, not a word) from `"hELlo"` (all letters)
+- Problem 4: reflection on Week 5 posted solutions — five questions covering `find()` vs. `index()` failure behavior, case sensitivity in `.count()`, why spaces disqualify a word (grid model), method chaining, and a free-choice comparison
 
 > **Note:** `week03/shopping.md` is a personal shopping list accidentally committed to the repo — it is not course material and should be ignored when generating student-facing content.
 
