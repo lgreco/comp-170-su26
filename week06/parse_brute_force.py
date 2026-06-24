@@ -42,7 +42,8 @@ def our_split(sentence: str, delimiter: str = " ") -> list[str]:
             # Bug: if two delimiters appear in a row (e.g. two spaces), we
             # reach this branch again immediately with new_entry still equal
             # to "". That empty string gets appended as if it were a real word.
-            output.append(new_entry)
+            if len(new_entry) > 0:
+                output.append(new_entry)
             new_entry = ""          # reset for the next word
         else:
             # Regular character — glue it onto the end of the word in progress.
@@ -59,85 +60,6 @@ def our_split(sentence: str, delimiter: str = " ") -> list[str]:
     return output
 
 
-def our_parse_fix_1(sentence: str, delimiter: str = " ") -> list[str]:
-    """
-    Split `sentence` on `delimiter`, ignoring consecutive delimiters.
-
-    Fix approach: before saving new_entry to output, check whether it is
-    empty. An empty new_entry means we just saw another delimiter in a row,
-    so there is no real word to save — we simply skip the append.
-    The same guard is applied to the final append after the loop, which
-    handles a trailing delimiter at the end of the sentence.
-    """
-
-    current_box = 0
-    output = list()
-    new_entry = ''
-
-    while current_box < len(sentence):
-
-        current_char = sentence[current_box]
-
-        if current_char == delimiter:
-            # Only save new_entry when it actually contains a word.
-            # If new_entry is empty we hit two delimiters in a row,
-            # so there is nothing real to add — we just reset and move on.
-            if new_entry != "":
-                output.append(new_entry)
-                new_entry = ""
-        else:
-            new_entry = new_entry + current_char
-
-        current_box += 1
-
-    # Guard the final append the same way: a trailing delimiter leaves
-    # new_entry empty, and we do not want a spurious empty string at the end.
-    if new_entry != "":
-        output.append(new_entry)
-
-    return output
-
-
-def our_parse_fix_2(sentence: str, delimiter: str = " ") -> list[str]:
-    """
-    Split `sentence` on `delimiter`, ignoring consecutive delimiters.
-
-    Fix approach: when a delimiter is found, immediately advance the index
-    past any additional delimiters that follow it using a nested while loop.
-    By the time the outer loop resumes, current_box already points at the
-    next real character, so no empty strings are ever built.
-    """
-
-    current_box = 0
-    output = list()
-    new_entry = ''
-
-    while current_box < len(sentence):
-
-        current_char = sentence[current_box]
-
-        if current_char == delimiter:
-            output.append(new_entry)
-            new_entry = ""
-
-            # Consume every additional delimiter that follows this one.
-            # After this inner loop, sentence[current_box + 1] is either a
-            # non-delimiter character or we are at the end of the sentence.
-            # The outer loop's increment below will then land exactly on the
-            # first real character of the next word.
-            while current_box + 1 < len(sentence) and sentence[current_box + 1] == delimiter:
-                current_box += 1
-        else:
-            new_entry = new_entry + current_char
-
-        current_box += 1
-
-    # After the loop the last word (if any) is still in new_entry.
-    if new_entry != "":
-        output.append(new_entry)
-
-    return output
-
 
 if __name__ == "__main__":
 
@@ -146,10 +68,3 @@ if __name__ == "__main__":
     print("original our_split (shows the bug):")
     print(our_split(sentence))
 
-    print("\nour_parse_fix_1 (guard the append):")
-    print(our_parse_fix_1(sentence))
-    print(our_parse_fix_1(sentence, "i"))
-
-    print("\nour_parse_fix_2 (nested loop skips extras):")
-    print(our_parse_fix_2(sentence))
-    print(our_parse_fix_2(sentence, "i"))
