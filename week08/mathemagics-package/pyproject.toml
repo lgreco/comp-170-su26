@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathemagics"
+version = "0.1.0"
+description = "A small library for solving quadratic (and linear) equations, including complex roots."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Leo Irakliotis", email = "lgreco@gmail.com" }
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Topic :: Education",
+]
+
+[project.urls]
+Homepage = "https://github.com/lgreco/comp-170-su26"
+
+[tool.setuptools.packages.find]
+where = ["src"]
