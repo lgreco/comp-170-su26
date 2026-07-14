@@ -22,6 +22,15 @@
 # unchanged, instead of crashing the program. new_balance starts out
 # equal to balance and is only changed once both checks pass, so
 # there is exactly one return statement, at the very end.
+#
+# NOTE: in general, a function that returns a value should not also
+# print — printing is the caller's job, since a function that prints
+# internally can't be reused somewhere the message isn't wanted (or is
+# wanted in a different form). We break that rule here on purpose, so
+# the error/warning text shows up automatically wherever these
+# functions are called, without every call site having to check the
+# result and print its own message. Treat this as a teaching shortcut,
+# not a pattern to copy in general.
 
 print("--- Problem 1 ---")
 
@@ -65,6 +74,11 @@ print(withdraw(300, 200))   # prints error, then 200 (balance unchanged)
 # added. new_balance starts out equal to balance and is only changed
 # once both checks pass, so there is exactly one return statement,
 # at the very end.
+#
+# NOTE: same exception as in Problem 1 above — a function that returns
+# a value normally shouldn't also print. We do it here only so the
+# error/warning message appears automatically at every call site,
+# for illustrative purposes.
 
 print("\n--- Problem 2 ---")
 
