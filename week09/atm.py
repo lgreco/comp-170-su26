@@ -1,59 +1,50 @@
-# COMP 170 — Week 8 Solutions
-# Topics: guard clauses with if statements, bank withdrawal/deposit,
-# testing functions that report errors by printing, reflection on
-# Week 7 solutions
-
-
-# ===========================================================================
-# Problem 1 — Bank Withdrawal
-# ===========================================================================
-#
-# Inputs: amount (how much cash to withdraw), balance (what's in the
-#         account right now)
-# Output: the updated balance after the withdrawal is deducted
-#
-# Two ways amount can be invalid, checked in this order:
-#   1. amount is not a multiple of $20 — this is invalid on its own,
-#      no matter what balance is, since a real ATM can't dispense it.
-#   2. amount is more than balance — this can only be checked once we
-#      already know amount is a "real" withdrawal amount, which is why
-#      it comes second.
-# Each invalid case prints an error message and reports balance
-# unchanged, instead of crashing the program. new_balance starts out
-# equal to balance and is only changed once both checks pass, so
-# there is exactly one return statement, at the very end.
-#
-# NOTE: in general, a function that returns a value should not also
-# print — printing is the caller's job, since a function that prints
-# internally can't be reused somewhere the message isn't wanted (or is
-# wanted in a different form). We break that rule here on purpose, so
-# the error/warning text shows up automatically wherever these
-# functions are called, without every call site having to check the
-# result and print its own message. Treat this as a teaching shortcut,
-# not a pattern to copy in general.
-
-print("--- Problem 1 ---")
-
 def withdraw(amount, balance):
     new_balance = balance
+    # guard clause: ATMs only dispense $20 bills, so anything that isn't
+    # a multiple of $20 is invalid before we even look at balance
     if amount % 20 != 0:
         raise ValueError("not 20")
+    # guard clause: can't withdraw money that isn't there
     elif amount > balance:
         raise ValueError("not enough")
-    else: 
+    else:
         new_balance = balance - amount
     return new_balance
 
 
-tries = 0
+def attempt_withdrawal(balance, max_tries=5):
+    """Ask for a withdrawal amount, retrying on bad input.
 
-while True and tries < 5:
-    tries = tries + 1
-    try:
-        amount = int(input("How much you wish to withdraw? "))
-        balance = withdraw(amount, 1000)
-        print("Success")
-        break
-    except ValueError as message:
-        print(f"Something's wrong: {message}")
-        print("Try again")
+    Keeps asking up to max_tries times, so a user who never enters
+    something valid doesn't get stuck in a loop forever. Each attempt
+    is wrapped in a try/except that catches two different problems at
+    once: int() failing on non-numeric text, and withdraw() raising a
+    ValueError because the amount is invalid. If every try fails, we
+    give up gently instead of crashing or looping forever.
+    """
+    tries = 0
+    succeeded = False
+    while tries < max_tries:
+        tries = tries + 1
+        try:
+            amount = int(input("How much you wish to withdraw? "))
+            balance = withdraw(amount, balance)
+            print("Success")
+            succeeded = True
+            break
+        except ValueError as message:
+            print(f"Something's wrong: {message}")
+            print("Try again")
+    if not succeeded:
+        print("Sorry, you're out of tries. Please visit a teller.")
+    return balance
+
+
+def main():
+    print("--- Problem 1 ---")
+    balance = 1000
+    attempt_withdrawal(balance)
+
+
+if __name__ == "__main__":
+    main()
