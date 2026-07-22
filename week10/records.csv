@@ -1,0 +1,13 @@
+Leo,,Irakliotis,1967,6,29,Physics,1985
+Frodo,,Baggins,,,,Occult Arts,3456
+John,A,Smith,1981,11,12,Math,2002
+
+<student>
+  <fname>Leo</fname>
+  <mi></mi>
+  <lname>Irakliotis</lname>
+  <born_year>1967</born_year>
+</student>
+<student>
+  <fname>Frodo</fname>
+  ...:
