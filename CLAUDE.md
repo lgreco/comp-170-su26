@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the course repository for **COMP 170** (Introduction to Computer Science with Python), Summer 2026. It is used to distribute lecture materials, review notes, and example code to students. New weekly content is added as the course progresses.
 
+This is the student-facing counterpart to the private `comp170su26/` folder in the `redesign-foundational-sequence` repo, where weekly plans and reviews are drafted before publishing here.
+
 ## Running Code
 
 Python 3 is the only runtime used in this course. Run any script directly:
