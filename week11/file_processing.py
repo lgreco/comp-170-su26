@@ -15,15 +15,15 @@ with open(file_to_process, 'r') as f:
             # Search through contents to see if word already there
             i = 0
             while i < len(contents) and is_unique:
-                not_unique = contents[i] == word
+                is_unique = contents[i] == word
                 i += 1
             # When this while loop ends, it ends either because we did
             # not find `word` in `contents` or because we foud it
             # at index position `i-1`
-            if not_unique:
-                frequency[i-1] += 1
-            else:
+            if is_unique:
                 contents.append(word)
                 frequency.append(1)
+            else:
+                frequency[i-1] = frequency[i-1] + 1  # same as frequency[i-1]+=1
         line = f.readline()
 
