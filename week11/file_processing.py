@@ -9,4 +9,15 @@ with open(file_to_process, 'r') as f:
     line = f.readline()
     while line is not None:  # line just read, not empty
         words = line.split()  # A list with the words of the current line
+        # Consider every word in this line:
+        for word in words:
+            is_unique = False
+            # Search through contents to see if word already there
+            i = 0
+            while i < len(contents) and not_unique:
+                not_unique = contents[i] == word
+                i += 1
+            # When this while loop ends, it ends either because we did
+            # not find `word` in `contents` or because we foud it
+            # at index position `i-1`
 
