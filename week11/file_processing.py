@@ -20,4 +20,10 @@ with open(file_to_process, 'r') as f:
             # When this while loop ends, it ends either because we did
             # not find `word` in `contents` or because we foud it
             # at index position `i-1`
+            if not_unique:
+                frequency[i-1] += 1
+            else:
+                contents.append(word)
+                frequency.append(1)
+        line = f.readline()
 
