@@ -14,7 +14,7 @@ with open(file_to_process, 'r') as f:
             is_unique = False
             # Search through contents to see if word already there
             i = 0
-            while i < len(contents) and not_unique:
+            while i < len(contents) and is_unique:
                 not_unique = contents[i] == word
                 i += 1
             # When this while loop ends, it ends either because we did
