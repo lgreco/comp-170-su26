@@ -7,8 +7,8 @@ file_to_process = "tale_of_two_cities.txt"
 
 with open(file_to_process, 'r') as f:
     line = f.readline()
-    while line:  # line just read, not empty
-        words = line.upper().split()  # A list with the words of the current line
+    while len(line) > 0:  # line just read, not empty
+        words = line.split()  # A list with the words of the current line
         # Consider every word in this line:
         for word in words:
             # Search through contents to see if current word
