@@ -116,6 +116,7 @@ That's the entire dictionary vocabulary this assignment needs. If you want the f
 ### Problem 1 — Most and Least Frequent Five-Letter Words
 
 **Goal:** Write a program, `word_count_url.py`, that reads a public-domain book directly from Project Gutenberg by URL, cleans each word of punctuation, counts every word with a dictionary, and reports the **10 most frequent** and **10 least frequent five-letter words** in the book.
+I recommend Charles Dicken's *Tale of Two Cities*, but any book will do.
 
 **Requirements:**
 
